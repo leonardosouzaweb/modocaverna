@@ -403,3 +403,4 @@ document.getElementById('adicionarTarefas').addEventListener('click', adicionarT
 carregarTarefas();
 
 // ======================================================================================================================== //
+
