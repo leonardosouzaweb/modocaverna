@@ -56,11 +56,11 @@ carregarItens();
 // SALVA TREINOS
 // ======================================================================================================================== //
 function salvarTreinos() {
-    sessionStorage.setItem('treinos', JSON.stringify(treinos));
+    localStorage.setItem('treinos', JSON.stringify(treinos));
 }
 
 function carregarTreinos() {
-    const treinosString = sessionStorage.getItem('treinos');
+    const treinosString = localStorage.setItem('treinos');
     if (treinosString) {
         treinos = JSON.parse(treinosString);
         atualizarListaTreinos();
@@ -108,11 +108,11 @@ carregarTreinos();
 // SALVA ROTINA
 // ======================================================================================================================== //
 function salvarRotinas() {
-    sessionStorage.setItem('rotinas', JSON.stringify(rotinas));
+    localStorage.setItem('rotinas', JSON.stringify(rotinas));
 }
 
 function carregarRotinas() {
-    const rotinasString = sessionStorage.getItem('rotinas');
+    const rotinasString = localStorage.setItem('rotinas');
     if (rotinasString) {
         rotinas = JSON.parse(rotinasString);
         atualizarListaRotinas();
@@ -160,11 +160,11 @@ carregarRotinas();
 // LISTA COMPROMISSO
 // ======================================================================================================================== //
 function salvarCompromissos() {
-    sessionStorage.setItem('compromissos', JSON.stringify(compromissos));
+    localStorage.setItem('compromissos', JSON.stringify(compromissos));
 }
 
 function carregarCompromissos() {
-    const compromissosString = sessionStorage.getItem('compromissos');
+    const compromissosString = localStorage.setItem('compromissos');
     if (compromissosString) {
         compromissos = JSON.parse(compromissosString);
         atualizarListaCompromissos();
@@ -221,11 +221,11 @@ carregarCompromissos();
 // LISTA REFEICOES
 // ======================================================================================================================== //
 function salvarRefeicoes() {
-    sessionStorage.setItem('refeicoes', JSON.stringify(refeicoes));
+    localStorage.setItem('refeicoes', JSON.stringify(refeicoes));
 }
 
 function carregarRefeicoes() {
-    const refeicoesString = sessionStorage.getItem('refeicoes');
+    const refeicoesString = localStorage.setItem('refeicoes');
     if (refeicoesString) {
         refeicoes = JSON.parse(refeicoesString);
         atualizarListaRefeicoes();
@@ -272,11 +272,11 @@ carregarRefeicoes();
 // LISTA OBJETIVOS
 // ======================================================================================================================== //
 function salvarObjetivosDia() {
-    sessionStorage.setItem('objetivosDia', JSON.stringify(objetivosDia));
+    localStorage.setItem('objetivosDia', JSON.stringify(objetivosDia));
 }
 
 function carregarObjetivosDia() {
-    const objetivosDiaString = sessionStorage.getItem('objetivosDia');
+    const objetivosDiaString = localStorage.setItem('objetivosDia');
     if (objetivosDiaString) {
         objetivosDia = JSON.parse(objetivosDiaString);
         atualizarListaObjetivosDia();
@@ -345,11 +345,11 @@ carregarObjetivosDia();
 // LISTA TAREFAS DO DIA
 // ======================================================================================================================== //
 function salvarTarefas() {
-    sessionStorage.setItem('tarefas', JSON.stringify(tarefas));
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
 }
 
 function carregarTarefas() {
-    const tarefasString = sessionStorage.getItem('tarefas');
+    const tarefasString = localStorage.setItem('tarefas');
     if (tarefasString) {
         tarefas = JSON.parse(tarefasString);
         atualizarListaTarefas();
