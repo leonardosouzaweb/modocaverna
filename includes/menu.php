@@ -17,8 +17,8 @@
                 <a href="ajuda.php"><li>Ajuda</li></a>
             </ul>
         </li>
-        <a href=""><li class="indique">Indique e Ganhe</li></a>
-        <a href=""><li class="loja">Loja Iuri Meira</li></a>
+        <a href="https://iurimeira.com/afiliados"><li class="indique">Indique e Ganhe</li></a>
+        <a href="https://loja.iurimeira.com"><li class="loja">Loja Iuri Meira</li></a>
         <a href="../index.php"><li>Sair</li></a>
     </ul>
 </nav>
