@@ -4,8 +4,8 @@
         <span>Treinos</span>
         <small>Ver tudo</small>
     </div>
-    <ul id="listaTreinos" class="scroll">
-        <li>Nenhum treino adicionado</li>
+    <ul id="listaTreinos">
+        <li class="empty">Nenhum treino adicionado</li>
     </ul>
 
     <div class="add" style="display:none;">

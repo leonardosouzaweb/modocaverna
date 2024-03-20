@@ -4,7 +4,7 @@
         <span>Não Esquecer</span>
     </div>
     <ul id="listaItens">
-        <li>Nenhum item adicionado a lista</li>
+        <li class="empty">Nenhum item adicionado a lista</li>
     </ul>
 
     <div class="add">

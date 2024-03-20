@@ -5,7 +5,7 @@
         <small>Ver tudo</small>
     </div>
     <div class="scroll">
-    <p>Nenhum objetivo adicionado ainda.</p>
+        <p class="empty">Nenhum objetivo adicionado ainda.</p>
     </div>
 
     <div class="add">

@@ -12,13 +12,13 @@
     <div class="actions">
         <div class="flowSelect">
             <span class="tilt">Selecione <br> o Flow</span>
-            <button>Produtividade</button>
-            <button>Estudos</button>
+            <button id="produtividadeButton">Produtividade</button>
+            <button id="estudosButton">Estudos</button>
         </div>
         <div class="setInterval">
             <span class="tilt">Selecione <br>o Intervalo</span>
-            <button>Curto</button>
-            <button>Longo</button>
+            <button id="curtoButton">Curto</button>
+            <button id="longoButton">Longo</button>
         </div>
     </div>
     <div class="timer">

@@ -5,7 +5,7 @@
         <small>Ver tudo</small>
     </div>
     <ul id="listaRotinas" class="custom">
-        <li>Nenhuma rotina disponível</li>
+        <li class="empty">Nenhuma rotina disponível</li>
     </ul>
 
     <div class="add">

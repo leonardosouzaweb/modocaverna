@@ -1,60 +1,20 @@
-const timerDisplay = document.getElementById('timer');
-const playButton = document.getElementById('playButton');
-const pauseButton = document.getElementById('pauseButton');
-const resetButton = document.getElementById('resetButton');
+var switchBtn = document.getElementById("switch-flat");
 
-const pomodorosIniciadosDisplay = document.querySelector('.info p:first-of-type');
+var isModalOpen = localStorage.getItem('modalOpen') === 'true';
+switchBtn.checked = isModalOpen;
 
-let timerInterval;
-let timerRunning = false;
-let timerSeconds = 25 * 60; // 25 minutes
-let pomodorosIniciados = 0;
-
-function startTimer() {
-    timerRunning = true;
-    playButton.disabled = true;
-    pauseButton.disabled = false;
-    resetButton.disabled = false;
-
-    timerInterval = setInterval(() => {
-        updateTimerDisplay();
-        timerSeconds--;
-        if (timerSeconds < 0) {
-            clearInterval(timerInterval);
-            timerRunning = false;
-            playButton.disabled = false;
-            pauseButton.disabled = true;
-            resetButton.disabled = false;
-            pomodorosIniciados++;
-            pomodorosIniciadosDisplay.textContent = pomodorosIniciados;
-        }
-    }, 1000);
+function updateModalState(isOpen) {
+    localStorage.setItem('modalOpen', isOpen);
 }
 
-function pauseTimer() {
-    clearInterval(timerInterval);
-    timerRunning = false;
-    playButton.disabled = false;
-    pauseButton.disabled = true;
-    resetButton.disabled = false;
-}
+var modalShown = false;
 
-function resetTimer() {
-    clearInterval(timerInterval);
-    timerRunning = false;
-    timerSeconds = 25 * 60;
-    updateTimerDisplay();
-    playButton.disabled = false;
-    pauseButton.disabled = true;
-    resetButton.disabled = true;
-}
-
-function updateTimerDisplay() {
-    const minutes = Math.floor(timerSeconds / 60);
-    const seconds = timerSeconds % 60;
-    timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-}
-
-playButton.addEventListener('click', startTimer);
-pauseButton.addEventListener('click', pauseTimer);
-resetButton.addEventListener('click', resetTimer);
+switchBtn.addEventListener("change", function() {
+    if (this.checked && !modalShown) {
+        var modal = new bootstrap.Modal(document.getElementById('modalFlow'));
+        modal.show();
+        updateModalState(true); 
+        modalShown = true; 
+    } else {
+    }
+});

@@ -5,7 +5,7 @@
         <small>Ver tudo</small>
     </div>
     <ul id="listaTarefas">
-        <li>Nenhuma tarefa adicionada</li>
+        <li class="empty">Nenhuma tarefa adicionada</li>
     </ul>
 
     <div class="add">

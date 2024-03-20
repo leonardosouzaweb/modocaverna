@@ -1,9 +1,11 @@
-function naoEsquecer() {
-    localStorage.setItem('naoEsquecer', JSON.stringify(itens));
+// SALVA LISTA
+// ======================================================================================================================== //
+function salvarItens() {
+    localStorage.setItem('itens', JSON.stringify(itens));
 }
 
 function carregarItens() {
-    const itensString = localStorage.getItem('naoEsquecer');
+    const itensString = localStorage.getItem('itens');
     if (itensString) {
         itens = JSON.parse(itensString);
         atualizarLista();
@@ -24,7 +26,7 @@ function adicionarItem() {
     const novoItem = document.getElementById('novoItemInput').value;
     if (novoItem.trim() !== '') {
         itens.push(novoItem);
-        naoEsquecer();
+        salvarItens();
         atualizarLista();
         verificarScroll(); 
         document.getElementById('novoItemInput').value = '';
@@ -49,13 +51,16 @@ function atualizarLista() {
 let itens = [];
 document.getElementById('adicionarItem').addEventListener('click', adicionarItem);
 carregarItens();
+// ======================================================================================================================== //
 
+// SALVA TREINOS
+// ======================================================================================================================== //
 function salvarTreinos() {
     localStorage.setItem('treinos', JSON.stringify(treinos));
 }
 
 function carregarTreinos() {
-    const treinosString = localStorage.getItem('treinos'); // Corrigido
+    const treinosString = localStorage.setItem('treinos');
     if (treinosString) {
         treinos = JSON.parse(treinosString);
         atualizarListaTreinos();
@@ -98,13 +103,16 @@ let treinos = [];
 
 document.getElementById('adicionarTreino').addEventListener('click', adicionarTreino);
 carregarTreinos();
+// ======================================================================================================================== //
 
+// SALVA ROTINA
+// ======================================================================================================================== //
 function salvarRotinas() {
     localStorage.setItem('rotinas', JSON.stringify(rotinas));
 }
 
 function carregarRotinas() {
-    const rotinasString = localStorage.getItem('rotinas'); // Corrigido
+    const rotinasString = localStorage.setItem('rotinas');
     if (rotinasString) {
         rotinas = JSON.parse(rotinasString);
         atualizarListaRotinas();
@@ -147,13 +155,16 @@ let rotinas = [];
 
 document.getElementById('adicionarRotina').addEventListener('click', adicionarRotina);
 carregarRotinas();
+// ======================================================================================================================== //
 
+// LISTA COMPROMISSO
+// ======================================================================================================================== //
 function salvarCompromissos() {
     localStorage.setItem('compromissos', JSON.stringify(compromissos));
 }
 
 function carregarCompromissos() {
-    const compromissosString = localStorage.getItem('compromissos'); // Corrigido
+    const compromissosString = localStorage.setItem('compromissos');
     if (compromissosString) {
         compromissos = JSON.parse(compromissosString);
         atualizarListaCompromissos();
@@ -175,6 +186,7 @@ function adicionarCompromisso() {
         salvarCompromissos();
         atualizarListaCompromissos();
 
+        // Verificar se há 4 ou mais itens para habilitar a classe scroll
         if (compromissos.length >= 4) {
             document.getElementById('listaCompromissos').classList.add('scroll');
         }
@@ -204,13 +216,16 @@ let compromissos = [];
 
 document.getElementById('adicionarCompromisso').addEventListener('click', adicionarCompromisso);
 carregarCompromissos();
+// ======================================================================================================================== //
 
+// LISTA REFEICOES
+// ======================================================================================================================== //
 function salvarRefeicoes() {
     localStorage.setItem('refeicoes', JSON.stringify(refeicoes));
 }
 
 function carregarRefeicoes() {
-    const refeicoesString = localStorage.getItem('refeicoes'); // Corrigido
+    const refeicoesString = localStorage.setItem('refeicoes');
     if (refeicoesString) {
         refeicoes = JSON.parse(refeicoesString);
         atualizarListaRefeicoes();
@@ -249,23 +264,24 @@ function atualizarListaRefeicoes() {
 }
 
 let refeicoes = [];
-const adicionarRefeicaoButton = document.getElementById('adicionarRefeicao');
-if (adicionarRefeicaoButton) {
-    adicionarRefeicaoButton.addEventListener('click', adicionarRefeicao);
-}
+document.getElementById('adicionarRefeicao').addEventListener('click', adicionarRefeicao);
 
 carregarRefeicoes();
+// ======================================================================================================================== //
 
+// LISTA OBJETIVOS
+// ======================================================================================================================== //
 function salvarObjetivosDia() {
     localStorage.setItem('objetivosDia', JSON.stringify(objetivosDia));
 }
 
 function carregarObjetivosDia() {
-    const objetivosDiaString = localStorage.getItem('objetivosDia'); // Corrigido
+    const objetivosDiaString = localStorage.setItem('objetivosDia');
     if (objetivosDiaString) {
         objetivosDia = JSON.parse(objetivosDiaString);
         atualizarListaObjetivosDia();
         
+        // Verificar se há 4 ou mais itens para adicionar a classe customScroll
         if (objetivosDia.length >= 4) {
             document.getElementById('objetivosDia').querySelector('.scroll').classList.add('customScroll');
         }
@@ -284,6 +300,7 @@ function adicionarObjetivoDia() {
         salvarObjetivosDia();
         atualizarListaObjetivosDia();
 
+        // Verificar se há 4 ou mais itens para adicionar a classe customScroll
         if (objetivosDia.length >= 4) {
             document.getElementById('objetivosDia').querySelector('.scroll').classList.add('customScroll');
         }
@@ -323,13 +340,16 @@ function atualizarListaObjetivosDia() {
 let objetivosDia = [];
 document.getElementById('adicionarObjetivo').addEventListener('click', adicionarObjetivoDia);
 carregarObjetivosDia();
+// ======================================================================================================================== //
 
+// LISTA TAREFAS DO DIA
+// ======================================================================================================================== //
 function salvarTarefas() {
     localStorage.setItem('tarefas', JSON.stringify(tarefas));
 }
 
 function carregarTarefas() {
-    const tarefasString = localStorage.getItem('tarefas');
+    const tarefasString = localStorage.setItem('tarefas');
     if (tarefasString) {
         tarefas = JSON.parse(tarefasString);
         atualizarListaTarefas();
@@ -351,6 +371,7 @@ function adicionarTarefa() {
         salvarTarefas();
         atualizarListaTarefas();
 
+        // Verificar se há 4 ou mais itens para habilitar a classe scroll
         if (tarefas.length >= 4) {
             document.getElementById('listaTarefas').classList.add('scroll');
         }
@@ -378,8 +399,39 @@ function atualizarListaTarefas() {
 
 let tarefas = [];
 
-const adicionarObjetivoButton = document.getElementById('adicionarObjetivo');
-if (adicionarObjetivoButton) {
-    adicionarObjetivoButton.addEventListener('click', adicionarObjetivoDia);
-}
+document.getElementById('adicionarTarefas').addEventListener('click', adicionarTarefa);
 carregarTarefas();
+
+// ======================================================================================================================== //
+document.addEventListener("DOMContentLoaded", function() {
+    // Captura os elementos das etapas
+    const step1 = document.querySelector(".step1");
+    const step2 = document.querySelector(".step2");
+
+    // Captura os botões de navegação
+    const nextStepBtn1 = step1.querySelector(".next");
+    const nextStepBtn2 = step2.querySelector(".next");
+    const backStepBtn2 = step2.querySelector(".back");
+
+    // Define a ação para o botão de avançar na etapa 1
+    nextStepBtn1.addEventListener("click", function() {
+        // Oculta a etapa 1
+        step1.style.display = "none";
+        // Exibe a etapa 2
+        step2.style.display = "block";
+    });
+
+    // Define a ação para o botão de avançar na etapa 2
+    nextStepBtn2.addEventListener("click", function() {
+        // Aqui você pode adicionar a lógica para avançar para a próxima etapa, se houver
+    });
+
+    // Define a ação para o botão de voltar na etapa 2
+    backStepBtn2.addEventListener("click", function() {
+        // Oculta a etapa 2
+        step2.style.display = "none";
+        // Exibe a etapa 1
+        step1.style.display = "block";
+    });
+    
+});

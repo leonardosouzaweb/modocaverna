@@ -1,11 +1,11 @@
 <div id="compromissos">
     <div class="title">
-        <img src="../assets/images/icons/icNaoEsquecer.svg">
+        <img src="../assets/images/icons/icCalendar.svg">
         <span>Compromissos</span>
         <small>Ver tudo</small>
     </div>
     <ul id="listaCompromissos">
-        <li>Nenhum compromisso adicionado</li>
+        <li class="empty">Nenhum compromisso adicionado</li>
     </ul>
 
     <div class="add">
