@@ -364,13 +364,13 @@ p { font-size: 16px; line-height: 25.6px; }
 .modal .modal-body .desafioOptions .itensAdicionadosFalhas ul li { display: inline-block; font-size: 12px; color: #5eaf4a; margin-right: 20px; }
 
 
-.modal .modal-body .desafioOptions .sugestoesAbdicar { overflow-x: auto; white-space: nowrap; padding-bottom: 20px; }
+.modal .modal-body .desafioOptions .sugestoesAbdicar { margin-top: 10px; }
 .modal .modal-body .desafioOptions .sugestoesAbdicar ul { list-style: none; padding: 0; margin: 0; margin-top: 10px; }
 .modal .modal-body .desafioOptions .sugestoesAbdicar ul li { cursor:pointer; display: inline-block; margin-right: 5px; line-height: 30px; font-size: 12px; background: #f1f1f1; padding: 1px 10px; border-radius: 10px; margin-bottom: 8px; transition: all 0.3s; }
 .modal .modal-body .desafioOptions .sugestoesAbdicar ul li:hover { background: #d9d9d9; }
 .modal .modal-body .desafioOptions .sugestoesAbdicar ul li.active { background: #D11F1F; color: #fff; font-weight: bold; }
 
-.modal .modal-body .desafioOptions .sugestoesFalhas { overflow-x: auto; white-space: nowrap; padding-bottom: 20px; }
+.modal .modal-body .desafioOptions .sugestoesFalhas { margin-top: 10px; }
 .modal .modal-body .desafioOptions .sugestoesFalhas ul { list-style: none; padding: 0; margin: 0; margin-top: 10px; }
 .modal .modal-body .desafioOptions .sugestoesFalhas ul li { cursor:pointer; display: inline-block; margin-right: 5px; line-height: 30px; font-size: 12px; background: #f1f1f1; padding: 1px 10px; border-radius: 10px; margin-bottom: 8px; transition: all 0.3s; }
 .modal .modal-body .desafioOptions .sugestoesFalhas ul li:hover { background: #d9d9d9; }

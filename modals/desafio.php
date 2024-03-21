@@ -38,14 +38,14 @@
 						<small>Clique nas sugestões abaixo e adicione à sua lista caso faça sentido.</small>
 						<div class="sugestoesAbdicar">
 							<ul>
-								<li>Pornografia</li>
-								<li>Álcool</li>
-								<li>Drogas</li>
-								<li>Jogos de Aposta</li>
-								<li>Festas</li>
-								<li>FastFood</li>
-								<li>Viagens</li>
-								<li>Video Game</li>
+								<li>🔞 Pornografia</li>
+								<li>🍺 Álcool</li>
+								<li>😵‍💫 Drogas</li>
+								<li>🎰 Jogos de Aposta</li>
+								<li>🎉 Festas</li>
+								<li>🧁 Fast Food</li>
+								<li>✈️ Viagens</li>
+								<li>🎮 Video Game</li>
 							</ul>
 						</div>
 						<div class="buttonsNav">
@@ -66,13 +66,13 @@
 						<small>Clique nas sugestões abaixo e adicione à sua lista caso faça sentido.</small>
 						<div class="sugestoesFalhas">
 							<ul>
-								<li>Ritual Matinal</li>
-								<li>Ritual Noturno</li>
-								<li>30min de Atividade Física</li>
-								<li>Jogos de Aposta</li>
-								<li>2h Flow Produtividade</li>
-								<li>1h Flow Estudos</li>
-								<li>Devocional</li>
+								<li>☀️ Ritual Matinal</li>
+								<li>🌙 Ritual Noturno</li>
+								<li>🏃🏻 30min de Atividade Física</li>
+								<li>🎰 Jogos de Aposta</li>
+								<li>✅ 2h Flow Produtividade</li>
+								<li>📚 1h Flow Estudos</li>
+								<li>🙏🏻 Devocional</li>
 							</ul>
 						</div>
 						<div class="buttonsNav">
