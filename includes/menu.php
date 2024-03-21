@@ -3,18 +3,19 @@
         <a href="./"><li>Home</li></a>
         <li class="dropdown">Ferramentas
             <ul class="dropdown-content">
+                <a href="comunidade.php"><li>Comunidade</li></a>
+                <a href="desafio.php"><li>Desafio Modo Caverna</li></a>
                 <a href="metas.php"><li>Metas</li></a>
-                <a href="desafio.php"><li>Desafio Caverna</li></a>
-                <a href="agenda.php"><li>Compromissos e Objetivos</li></a>
-                <a href="objetivos.php"><li>Objetivos</li></a>
+                <a href="compromissos.php"><li>Compromissos e Objetivos</li></a>
+                <a href="rituais.php"><li>Rituais</li></a>
+                <a href="treino-alimentacao.php"><li>Treino e Alimentação</li></a>
                 <a href="flow-caverna.php"><li>Flow Caverna</li></a>
                 <a href="mindfulness.php"><li>Mindfulness</li></a>
-                <a href="lembretes.php"><li>Lembretes</li></a>
+                <a href="anotacoes.php"><li>Anotações e Lembretes</li></a>
                 <a href="conhecimento.php"><li>Conhecimento</li></a>
-                <a href="treino-dieta.php"><li>Treino/Dieta</li></a>
                 <a href="financeiro.php"><li>Financeiro</li></a>
-                <a href="conteudo.php"><li>Conteúdos</li></a>
-                <a href="ajuda.php"><li>Ajuda</li></a>
+                <a href="conteudos.php"><li>Conteúdos e Manual de Uso</li></a>
+                
             </ul>
         </li>
         <a href="https://iurimeira.com/afiliados" target="_blank"><li class="indique">Indique e Ganhe</li></a>

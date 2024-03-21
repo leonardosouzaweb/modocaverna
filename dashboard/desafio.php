@@ -35,7 +35,8 @@
                             <button class="buttonActive" style="display:none;"><img src="../assets/images/icons/icDesafio.svg"> Desafio Ativado</button>
                         </div>
                         <div>
-                            <p>Como funciona?</p>
+                            <p>Como funciona o Desafio? <span>Clique no botão ao lado para saber mais sobre o Desafio Caverna</span></p>
+                            <button>Ver tutorial</button>
                         </div>
                     </div>
 

@@ -37,7 +37,7 @@
                 <!-- USER -->
                 <div class="user mt-4">
                     <div>
-                        <img src="../assets/images/avatar.png" alt="">
+                        <img src="../assets/images/avatar.png" class="avatar">
                     </div>
 
                     <div>
@@ -46,7 +46,8 @@
                     </div>
 
                     <div>
-                        <button>Acesse o seu perfil caverna</button>
+                        <button class="ranking"><img src="../assets/images/icons/icTrophy.svg">Ranking e Premiações</button>
+                        <button class="perfil">Perfil caverna</button>
                     </div>
                 </div>
                 <!-- END -->
