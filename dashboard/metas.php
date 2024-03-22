@@ -132,23 +132,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const inputs = document.querySelectorAll('.form-control');
+        const inputs = document.querySelectorAll('.form-control');
 
-            inputs.forEach(input => {
-                input.addEventListener('keydown', function(event) {
-                    if (event.key === 'Enter') {
-                        const index = input.getAttribute('data-index');
-                        const value = input.value.trim();
-                        
-                        if (value !== '') {
-                            localStorage.setItem(`meta_${index}`, value);
-                        } else {
-                            localStorage.removeItem(`meta_${index}`);
-                        }
+        // Carregar valores do localStorage para os campos de entrada
+        inputs.forEach(input => {
+            const index = input.getAttribute('data-index');
+            const savedValue = localStorage.getItem(`meta_${index}`);
+            if (savedValue) {
+                input.value = savedValue;
+            }
+        });
+
+        // Adicionar evento de pressionar tecla para salvar/remover valores no localStorage
+        inputs.forEach(input => {
+            input.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                    const index = input.getAttribute('data-index');
+                    const value = input.value.trim();
+                    
+                    if (value !== '') {
+                        localStorage.setItem(`meta_${index}`, value);
+                    } else {
+                        localStorage.removeItem(`meta_${index}`);
                     }
-                });
+                }
             });
         });
+    });
     </script>
 
 <script>
