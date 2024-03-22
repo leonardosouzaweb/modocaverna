@@ -32,7 +32,7 @@
                 <div class="flow">
                     <div class="top">
                         <div>
-                            <span>Flow Caverna</span>
+                            <span data-bs-toggle="modal" data-bs-target="#modalFlow">Flow Caverna</span>
                             <p>Faça o Ritual de ativação do Flow Caverna para a  liberação das funcionalidades</p>
                             <div class="switch__container">
                                 <input id="switch-flat" class="switch switch--flat" type="checkbox">

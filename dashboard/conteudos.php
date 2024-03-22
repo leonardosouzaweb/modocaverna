@@ -45,42 +45,44 @@
 
                         <h1>Acesso rápido</h1>
 
-                        <div class="acessoRapido">
+                        <div class="acessoRapido mb-5">
                             <div class="hvr-grow">
-                                <img src="../assets/images/banners/min/banner1.png">
+                                <a href="https://www.youtube.com/@iurimeira" target="_blank"><img src="../assets/images/banners/min/banner1.png"></a>
                             </div>
 
                             <div class="hvr-grow">
+                                <a href="https://cursos.iurimeira.com/auth/login?redirect=%2F" target="_blank"><img src="../assets/images/banners/min/banner9.png"></a>
+                            </div>
+
+                            <div class="hvr-grow">
+                                <a href="https://redirect.lifs.app/aqdm-mc" target="_blank"><img src="../assets/images/banners/min/banner3.png"></a>
+                            </div>
+
+                            <div class="hvr-grow" style="display:none">
                                 <img src="../assets/images/banners/min/banner2.png">
                             </div>
 
-                            <div class="hvr-grow">
-                                <img src="../assets/images/banners/min/banner3.png">
-                            </div>
-
-                            <div class="hvr-grow">
+                            <div class="hvr-grow" style="display:none">
                                 <img src="../assets/images/banners/min/banner4.png">
                             </div>
 
-                            <div class="hvr-grow">
+                            <div class="hvr-grow" style="display:none">
                                 <img src="../assets/images/banners/min/banner5.png">
                             </div>
 
-                            <div class="hvr-grow">
+                            <div class="hvr-grow" style="display:none">
                                 <img src="../assets/images/banners/min/banner6.png">
                             </div>
 
-                            <div class="hvr-grow">
+                            <div class="hvr-grow" style="display:none">
                                 <img src="../assets/images/banners/min/banner7.png">
                             </div>
 
-                            <div class="hvr-grow">
+                            <div class="hvr-grow" style="display:none">
                                 <img src="../assets/images/banners/min/banner8.png">
                             </div>
 
-                            <div class="hvr-grow">
-                                <img src="../assets/images/banners/min/banner9.png">
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
