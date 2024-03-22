@@ -71,7 +71,7 @@
                             </div>
                         </div>
 
-                        <div class="metasEdit">
+                        <div class="metasEdit mb-5">
                             <div>
                                 <span>✅ Metas - 01 de Janeiro a 30 de Junho</span>
                                 <p>1. Saúde</p>
@@ -134,7 +134,6 @@
         document.addEventListener('DOMContentLoaded', function() {
         const inputs = document.querySelectorAll('.form-control');
 
-        // Carregar valores do localStorage para os campos de entrada
         inputs.forEach(input => {
             const index = input.getAttribute('data-index');
             const savedValue = localStorage.getItem(`meta_${index}`);
@@ -143,7 +142,6 @@
             }
         });
 
-        // Adicionar evento de pressionar tecla para salvar/remover valores no localStorage
         inputs.forEach(input => {
             input.addEventListener('keydown', function(event) {
                 if (event.key === 'Enter') {
@@ -161,17 +159,14 @@
     });
     </script>
 
-<script>
+    <script>
         function uploadImage(element) {
-            // Create file input element
             var input = document.createElement('input');
             input.type = 'file';
             input.accept = 'image/*';
 
-            // Trigger click on file input
             input.click();
 
-            // When file is selected
             input.onchange = function(event) {
                 var file = event.target.files[0];
                 var reader = new FileReader();
@@ -181,17 +176,11 @@
                     uploadedImage.src = e.target.result;
                     uploadedImage.classList.add('uploadedImage', 'imagemCusto');
 
-                    // Assign unique ID for the uploaded image
-                    var imageId = 'uploadedImage_' + Date.now(); // Using timestamp as unique ID
+                    var imageId = 'uploadedImage_' + Date.now(); 
                     uploadedImage.id = imageId;
 
-                    // Remove the default image
                     element.innerHTML = '';
-                    
-                    // Insert uploaded image
                     element.appendChild(uploadedImage);
-
-                    // Save image to localStorage
                     localStorage.setItem(imageId, e.target.result);
                 };
 
@@ -199,7 +188,6 @@
             };
         }
 
-        // Load previously uploaded images from localStorage
         window.onload = function() {
             for (var i = 1; i <= 4; i++) {
                 var uploadedImageSrc = localStorage.getItem('uploadedImage_boxImage_' + i);
