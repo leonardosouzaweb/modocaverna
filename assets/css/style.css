@@ -131,7 +131,12 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .desafio .content div:nth-child(1) .meComprometo.hidden { filter: blur(1.5rem); user-select: none; pointer-events: none; }
 .main .wrapper .container .desafio .content div:nth-child(1) .meComprometo span { color: #D11F1F; font-size: 20px; margin-bottom: 10px; display: block; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 20px; }
 .main .wrapper .container .desafio .content div:nth-child(1) .meComprometo img { display: block; margin: 0 auto; position: relative; top: 110px; }
-.main .wrapper .container .desafio .content div:nth-child(1) .meComprometo ul { list-style: none; padding: 0; margin: 0; }
+.main .wrapper .container .desafio .content div:nth-child(1) .meComprometo ul { list-style: none; padding: 0; margin: 0; overflow-y: scroll; height: 290px; }
+.main .wrapper .container .desafio .content div:nth-child(1) .meComprometo ul::-webkit-scrollbar { width: 2px; height: 2px; }
+.main .wrapper .container .desafio .content div:nth-child(1) .meComprometo ul::-webkit-scrollbar-track { background: transparent; border-radius: 10px; }
+.main .wrapper .container .desafio .content div:nth-child(1) .meComprometo ul::-webkit-scrollbar-thumb { background: transparent; border-radius: 30px; }
+.main .wrapper .container .desafio .content div:nth-child(1) .meComprometo ul::-webkit-scrollbar-thumb:hover { background: transparent; }
+
 
 .main .wrapper .container .desafio .content div:nth-child(1) .meComprometo ul li { color: #fff; line-height: 45px; }
 .main .wrapper .container .desafio .content div:nth-child(1) .meComprometo ul li img { top: 80px; width: 100px; padding: 18px 0; }
@@ -140,7 +145,11 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar.hidden { filter: blur(1.5rem); user-select: none; pointer-events: none; }
 .main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar span { color: #83DA5A; font-size: 20px; margin-bottom: 10px; display: block; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 20px; }
 .main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar img { display: block; margin: 0 auto; position: relative; top: 110px; }
-.main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul { list-style: none; padding: 0; margin: 0; }
+.main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul { list-style: none; padding: 0; margin: 0; overflow-y: scroll; height: 290px; }
+.main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul::-webkit-scrollbar { width: 2px; height: 2px; }
+.main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul::-webkit-scrollbar-track { background: transparent; border-radius: 10px; }
+.main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul::-webkit-scrollbar-thumb { background: transparent; border-radius: 30px; }
+.main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul::-webkit-scrollbar-thumb:hover { background: transparent; }
 .main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul li { color: #fff; line-height: 45px; }
 .main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul li img { top: 80px; width: 100px; padding: 18px 0;  }
 
