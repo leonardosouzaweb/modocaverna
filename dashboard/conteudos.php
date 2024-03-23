@@ -46,12 +46,12 @@
                         <h1>Acesso rápido</h1>
 
                         <div class="acessoRapido mb-5">
+                        <div class="hvr-grow">
+                                <a href="https://cursos.iurimeira.com/auth/login?redirect=%2F" target="_blank"><img src="../assets/images/banners/min/banner9.png"></a>
+                            </div>
+                            
                             <div class="hvr-grow">
                                 <a href="https://www.youtube.com/@iurimeira" target="_blank"><img src="../assets/images/banners/min/banner1.png"></a>
-                            </div>
-
-                            <div class="hvr-grow">
-                                <a href="https://cursos.iurimeira.com/auth/login?redirect=%2F" target="_blank"><img src="../assets/images/banners/min/banner9.png"></a>
                             </div>
 
                             <div class="hvr-grow">
