@@ -20,7 +20,8 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .heading { background: #141414; padding: 15px 0; position: fixed; top: 0; width: 100%; z-index: 2; -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); background-color: rgba(6, 9, 18, .2); }
 .main .wrapper .heading .container { display: flex; align-items: center; width: 100%; justify-content: space-between; gap: 30px; }
 .main .wrapper .heading .container .logo { width: 20%; }
-.main .wrapper .heading .container .logo img { width: 70%; }
+.main .wrapper .heading .container .logo img { cursor:pointer; width: 70%; transition: all 0.3s; }
+.main .wrapper .heading .container .logo img:hover { opacity: 0.8; }
 
 .main .wrapper .heading .container .menu { width: 80%; display: flex; justify-content: flex-end;  }
 .main .wrapper .heading .container .menu nav { margin-left: auto;  }

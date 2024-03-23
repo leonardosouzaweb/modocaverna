@@ -1,6 +1,5 @@
 <nav>
     <ul>
-        <a href="./"><li>Home</li></a>
         <li class="dropdown">A definir
             <ul class="dropdown-content">
                 <a href="comunidade.php"><li>Comunidade</li></a>

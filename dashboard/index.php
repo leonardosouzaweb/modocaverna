@@ -20,7 +20,7 @@
             <div class="heading">
                 <div class="container">
                     <div class="logo">
-                        <img src="../assets/images/logo.svg">
+                        <a href="./"><img src="../assets/images/logo.svg"></a>
                     </div>
                     <div class="menu">
                         <?php include_once '../includes/menu.php'; ?>
