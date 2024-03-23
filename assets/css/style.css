@@ -44,10 +44,13 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .banner { border-radius: 20px; background: #141414; width: 100%; margin: 0 auto; height: 250px; margin-top: 110px !important; margin-bottom: 35px; }
 .main .wrapper .container .banner img { width: 100%; }
 
-.main .wrapper .container .user { display: flex; align-items: center; gap: 30px; }
+.main .wrapper .container .user { display: flex; align-items: center; gap: 30px;  }
+.main .wrapper .container .user div:nth-child(1) { width: 8%;}
+.main .wrapper .container .user div:nth-child(2) {  width: 40%;}
+.main .wrapper .container .user div:nth-child(3) { width: 45%; }
 .main .wrapper .container .user h5 { color: #fff; font-size: 30px; font-weight: 300; }
-.main .wrapper .container .user p { color: rgba(255,255,255,0.5); margin-top: -10px; }
-.main .wrapper .container .user img.avatar { width: 100px; }
+.main .wrapper .container .user p { color: rgba(255,255,255,0.5); margin-top: -10px; padding-right: 100px; font-size: 14px; line-height: 22px; margin-top: -2px;}
+.main .wrapper .container .user img.avatar { width: 100%; }
 .main .wrapper .container .user button.ranking { border-radius: 15px; background: #3f3f3f; padding: 15px 30px; color: #fff; border: none; width: 300px; font-size: 19px; transition: all 0.3s; font-weight: 600; margin-right: 25px; }
 .main .wrapper .container .user button.ranking img { width: 27px; margin-right: 10px; margin-top: -2px;}
 .main .wrapper .container .user button.ranking:hover { background: rgb(75, 75, 75); }

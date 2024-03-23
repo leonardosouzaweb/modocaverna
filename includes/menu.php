@@ -1,7 +1,7 @@
 <nav>
     <ul>
         <a href="./"><li>Home</li></a>
-        <li class="dropdown">Ferramentas
+        <li class="dropdown">A definir
             <ul class="dropdown-content">
                 <a href="comunidade.php"><li>Comunidade</li></a>
                 <a href="desafio.php"><li>Desafio Modo Caverna</li></a>

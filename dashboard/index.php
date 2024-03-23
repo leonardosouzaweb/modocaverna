@@ -42,7 +42,7 @@
 
                     <div>
                         <h5>Olá Iuri</h5>
-                        <p>Reference site about Lorem Ipsum, giving information on its origins</p>
+                        <p id="dynamicPhrase"></p>
                     </div>
 
                     <div>
