@@ -264,6 +264,41 @@ function atualizarVisibilidade() {
 // Chamada da função para iniciar a atualização da visibilidade
 atualizarVisibilidade();
 
+function adicionarItemAbdicar(textoItem, isSugestao) {
+    const ulItensAdicionados = document.querySelector(".itensAdicionadosAbdicar ul");
+    const li = document.createElement("li");
+    li.textContent = textoItem; // Utiliza o texto do item em vez do ID
+
+    // Adicionando um elemento de imagem (ícone de lixeira) para remover o item
+    const removerIcone = document.createElement("img");
+    removerIcone.src = "icone-lixeira.png"; // Substitua "icone-lixeira.png" pelo caminho correto do seu ícone
+    removerIcone.alt = "Remover";
+    removerIcone.classList.add("removerItem"); // Adicione uma classe para os ícones de remoção
+
+    // Adicionando evento de clique para remover o item quando o ícone for clicado
+    removerIcone.addEventListener("click", () => {
+        ulItensAdicionados.removeChild(li); // Remove o item da lista
+    
+        // Remove o item do localStorage
+        let itensAdicionados = JSON.parse(localStorage.getItem("itensAdicionadosAbdicar")) || [];
+        itensAdicionados = itensAdicionados.filter((i) => i !== textoItem);
+        localStorage.setItem("itensAdicionadosAbdicar", JSON.stringify(itensAdicionados));
+    
+        // Remover as classes "adicionado" e "active" de todos os elementos <li> na lista de sugestões
+        const sugestoes = document.querySelectorAll(".sugestoesAbdicar ul li");
+        sugestoes.forEach((sugestao) => {
+            sugestao.classList.remove("adicionado", "active");
+        });
+    });
+
+    li.appendChild(removerIcone); // Adiciona o ícone de remoção ao lado do item
+    ulItensAdicionados.appendChild(li);
+
+    // Salvando no localStorage
+    let itensAdicionados = JSON.parse(localStorage.getItem("itensAdicionadosAbdicar")) || [];
+    itensAdicionados.push(textoItem);
+    localStorage.setItem("itensAdicionadosAbdicar", JSON.stringify(itensAdicionados));
+}
 
 // Selecionando o botão e a lista de sugestões
 const btnAdicionar = document.getElementById("btnAdicionarAbdicar");
@@ -273,10 +308,9 @@ const sugestoesAbdicar = document.querySelectorAll(".sugestoesAbdicar ul li");
 sugestoesAbdicar.forEach((sugestao) => {
     sugestao.addEventListener("click", () => {
         if (!sugestao.classList.contains("adicionado")) {
-            sugestao.classList.add("adicionado"); // Adiciona a classe "adicionado" para indicar que o item foi adicionado
-            sugestao.classList.toggle("active"); // Adiciona ou remove a classe "active"
-            const itemAdicionado = sugestao.textContent.trim();
-            adicionarItemAbdicar(itemAdicionado);
+            sugestao.classList.add("adicionado", "active"); // Adiciona a classe "adicionado" e "active" para indicar que o item foi adicionado
+            const itemAdicionado = sugestao.textContent; // Alteração aqui para pegar o texto do item clicado
+            adicionarItemAbdicar(itemAdicionado, true); // Passando true para indicar que o item foi adicionado a partir das sugestões
         }
     });
 });
@@ -286,62 +320,72 @@ btnAdicionar.addEventListener("click", () => {
     const inputAbdicar = document.getElementById("inputAbdicar");
     const novoItem = inputAbdicar.value.trim();
     if (novoItem !== "") {
-        adicionarItemAbdicar(novoItem);
+        adicionarItemAbdicar(novoItem, false); // Passando false para indicar que o item foi adicionado manualmente
         inputAbdicar.value = ""; // Limpa o campo de entrada após adicionar
     }
 });
 
-// Função para adicionar item na lista e salvar no localStorage
-function adicionarItemAbdicar(item) {
-    const ulItensAdicionados = document.querySelector(".itensAdicionadosAbdicar ul");
-    const li = document.createElement("li");
-    li.textContent = item;
-    ulItensAdicionados.appendChild(li);
-
-    // Salvando no localStorage
-    let itensAdicionados = JSON.parse(localStorage.getItem("itensAdicionadosAbdicar")) || [];
-    itensAdicionados.push(item);
-    localStorage.setItem("itensAdicionadosAbdicar", JSON.stringify(itensAdicionados));
-}
-
-// Selecionando o botão e a lista de sugestões
-const btnAdicionarFalhar = document.getElementById("btnAdicionarFalhar");
-const sugestoesFalhas = document.querySelectorAll(".sugestoesFalhas ul li");
-
-// Adicionando evento de clique para cada item de sugestão
-sugestoesFalhas.forEach((sugestao) => {
-    sugestao.addEventListener("click", () => {
-        if (!sugestao.classList.contains("adicionado")) {
-            sugestao.classList.add("adicionado"); // Adiciona a classe "adicionado" para indicar que o item foi adicionado
-            sugestao.classList.toggle("active"); // Adiciona ou remove a classe "active"
-            const itemAdicionado = sugestao.textContent.trim();
-            adicionarItemFalhar(itemAdicionado);
-        }
-    });
-});
-
-// Adicionando evento de clique para o botão "Adicionar"
-btnAdicionarFalhar.addEventListener("click", () => {
-    const inputFalhar = document.getElementById("inputFalhar");
-    const novoItem = inputFalhar.value.trim();
-    if (novoItem !== "") {
-        adicionarItemFalhar(novoItem);
-        inputFalhar.value = ""; // Limpa o campo de entrada após adicionar
-    }
-});
-
-// Função para adicionar item na lista e salvar no localStorage
-function adicionarItemFalhar(item) {
+function adicionarItemFalhar(textoItem, isSugestao) {
     const ulItensAdicionados = document.querySelector(".itensAdicionadosFalhas ul");
     const li = document.createElement("li");
-    li.textContent = item;
+    li.textContent = textoItem; // Utiliza o texto do item em vez do ID
+
+    // Adicionando um elemento de imagem (ícone de lixeira) para remover o item
+    const removerIcone = document.createElement("img");
+    removerIcone.src = "icone-lixeira.png"; // Substitua "icone-lixeira.png" pelo caminho correto do seu ícone
+    removerIcone.alt = "Remover";
+    removerIcone.classList.add("removerItem"); // Adicione uma classe para os ícones de remoção
+
+    // Adicionando evento de clique para remover o item quando o ícone for clicado
+    removerIcone.addEventListener("click", () => {
+        ulItensAdicionados.removeChild(li); // Remove o item da lista
+    
+        // Remove o item do localStorage
+        let itensAdicionados = JSON.parse(localStorage.getItem("itensAdicionadosFalhar")) || [];
+        itensAdicionados = itensAdicionados.filter((i) => i !== textoItem);
+        localStorage.setItem("itensAdicionadosFalhar", JSON.stringify(itensAdicionados));
+    
+        // Remover as classes "adicionado" e "active" de todos os elementos <li> na lista de sugestões
+        const sugestoes = document.querySelectorAll(".sugestoesFalhas ul li");
+        sugestoes.forEach((sugestao) => {
+            sugestao.classList.remove("adicionado", "active");
+        });
+    });
+
+    li.appendChild(removerIcone); // Adiciona o ícone de remoção ao lado do item
     ulItensAdicionados.appendChild(li);
 
     // Salvando no localStorage
     let itensAdicionados = JSON.parse(localStorage.getItem("itensAdicionadosFalhar")) || [];
-    itensAdicionados.push(item);
+    itensAdicionados.push(textoItem);
     localStorage.setItem("itensAdicionadosFalhar", JSON.stringify(itensAdicionados));
 }
+
+// Selecionando o botão e a lista de sugestões de falhas
+const btnAdicionarFalhar = document.getElementById("btnAdicionarFalhar");
+const sugestoesFalhas = document.querySelectorAll(".sugestoesFalhas ul li");
+
+// Adicionando evento de clique para cada item de sugestão de falhas
+sugestoesFalhas.forEach((sugestao) => {
+    sugestao.addEventListener("click", () => {
+        if (!sugestao.classList.contains("adicionado")) {
+            sugestao.classList.add("adicionado", "active"); // Adiciona a classe "adicionado" e "active" para indicar que o item foi adicionado
+            const itemAdicionado = sugestao.textContent; // Alteração aqui para pegar o texto do item clicado
+            adicionarItemFalhar(itemAdicionado, true); // Passando true para indicar que o item foi adicionado a partir das sugestões
+        }
+    });
+});
+
+// Adicionando evento de clique para o botão "Adicionar" de falhas
+btnAdicionarFalhar.addEventListener("click", () => {
+    const inputFalhar = document.getElementById("inputFalhar");
+    const novoItem = inputFalhar.value.trim();
+    if (novoItem !== "") {
+        adicionarItemFalhar(novoItem, false); // Passando false para indicar que o item foi adicionado manualmente
+        inputFalhar.value = ""; // Limpa o campo de entrada após adicionar
+    }
+});
+
 
 const textareaMensagem = document.querySelector(".step3 textarea");
 const btnIniciarDesafio = document.querySelector(".step3 .iniciarDesafio");
