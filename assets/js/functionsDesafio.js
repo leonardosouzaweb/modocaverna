@@ -272,9 +272,12 @@ const sugestoesAbdicar = document.querySelectorAll(".sugestoesAbdicar ul li");
 // Adicionando evento de clique para cada item de sugestão
 sugestoesAbdicar.forEach((sugestao) => {
     sugestao.addEventListener("click", () => {
-        sugestao.classList.toggle("active"); // Adiciona ou remove a classe "active"
-        const itemAdicionado = sugestao.textContent.trim();
-        adicionarItemAbdicar(itemAdicionado);
+        if (!sugestao.classList.contains("adicionado")) {
+            sugestao.classList.add("adicionado"); // Adiciona a classe "adicionado" para indicar que o item foi adicionado
+            sugestao.classList.toggle("active"); // Adiciona ou remove a classe "active"
+            const itemAdicionado = sugestao.textContent.trim();
+            adicionarItemAbdicar(itemAdicionado);
+        }
     });
 });
 
@@ -308,9 +311,12 @@ const sugestoesFalhas = document.querySelectorAll(".sugestoesFalhas ul li");
 // Adicionando evento de clique para cada item de sugestão
 sugestoesFalhas.forEach((sugestao) => {
     sugestao.addEventListener("click", () => {
-        sugestao.classList.toggle("active"); // Adiciona ou remove a classe "active"
-        const itemAdicionado = sugestao.textContent.trim();
-        adicionarItemFalhar(itemAdicionado);
+        if (!sugestao.classList.contains("adicionado")) {
+            sugestao.classList.add("adicionado"); // Adiciona a classe "adicionado" para indicar que o item foi adicionado
+            sugestao.classList.toggle("active"); // Adiciona ou remove a classe "active"
+            const itemAdicionado = sugestao.textContent.trim();
+            adicionarItemFalhar(itemAdicionado);
+        }
     });
 });
 

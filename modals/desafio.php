@@ -28,7 +28,7 @@
 					<div class="step1">
 						<span class="abdicar">Step 1 - Me comprometo a abdicar de:</span>
 						<div class="formItem">
-							<input type="text" id="inputAbdicar" class="form-control" placeholder="Adicionar">
+							<input type="text" id="inputAbdicar" class="form-control" placeholder="Adicionar" onkeypress="if(event.keyCode==13){document.getElementById('btnAdicionarAbdicar').click();}">
 							<button id="btnAdicionarAbdicar">Adicionar</button>
 						</div>
 						<div class="itensAdicionadosAbdicar">
@@ -38,14 +38,14 @@
 						<small>Clique nas sugestões abaixo e adicione à sua lista caso faça sentido.</small>
 						<div class="sugestoesAbdicar">
 							<ul>
-								<li>🔞 Pornografia</li>
-								<li>🍺 Álcool</li>
-								<li>😵‍💫 Drogas</li>
-								<li>🎰 Jogos de Aposta</li>
-								<li>🎉 Festas</li>
-								<li>🧁 Fast Food</li>
-								<li>✈️ Viagens</li>
-								<li>🎮 Video Game</li>
+								<li id="sugestao1">🔞 Pornografia</li>
+								<li id="sugestao2">🍺 Álcool</li>
+								<li id="sugestao3">😵‍💫 Drogas</li>
+								<li id="sugestao4">🎰 Jogos de Aposta</li>
+								<li id="sugestao5">🎉 Festas</li>
+								<li id="sugestao6">🧁 Fast Food</li>
+								<li id="sugestao7">✈️ Viagens</li>
+								<li id="sugestao8">🎮 Video Game</li>
 							</ul>
 						</div>
 						<div class="buttonsNav">
@@ -66,13 +66,13 @@
 						<small>Clique nas sugestões abaixo e adicione à sua lista caso faça sentido.</small>
 						<div class="sugestoesFalhas">
 							<ul>
-								<li>☀️ Ritual Matinal</li>
-								<li>🌙 Ritual Noturno</li>
-								<li>🏃🏻 30min de Atividade Física</li>
-								<li>🎰 Jogos de Aposta</li>
-								<li>✅ 2h Flow Produtividade</li>
-								<li>📚 1h Flow Estudos</li>
-								<li>🙏🏻 Devocional</li>
+								<li id="sugestao9">☀️ Ritual Matinal</li>
+								<li id="sugestao10">🌙 Ritual Noturno</li>
+								<li id="sugestao11">🏃🏻 30min de Atividade Física</li>
+								<li id="sugestao12">🎰 Jogos de Aposta</li>
+								<li id="sugestao13">✅ 2h Flow Produtividade</li>
+								<li id="sugestao14">📚 1h Flow Estudos</li>
+								<li id="sugestao15">🙏🏻 Devocional</li>
 							</ul>
 						</div>
 						<div class="buttonsNav">
