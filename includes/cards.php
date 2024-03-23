@@ -48,7 +48,7 @@
 
 <div class="hvr-grow">
     <a href="anotacoes.php"><img src="../assets/images/covers/lembretes.png"></a>
-    <span>Anotações e Lembretes</span>
+    <span>Anotações</span>
     <div class="mask"></div>
 </div>
 
@@ -66,6 +66,6 @@
 
 <div class="hvr-grow">
     <a href="conteudos.php"><img src="../assets/images/covers/conteudos.png"></a>
-    <span>Conteúdos e Manual de Uso</span>
+    <span>Manual de Uso e Conteúdos</span>
     <div class="mask"></div>
 </div>
