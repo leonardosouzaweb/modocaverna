@@ -56,7 +56,7 @@
 					<div class="step2" style="display:none">
 						<span class="falhar">Step 2 - Não posso falhar::</span>
 						<div class="formItem">
-							<input type="text" id="inputFalhar" class="form-control" placeholder="Adicionar">
+							<input type="text" id="inputFalhar" class="form-control" placeholder="Adicionar" onkeypress="if(event.keyCode==13){document.getElementById('btnAdicionarFalhar').click();}">
 							<button id="btnAdicionarFalhar">Adicionar</button>
 						</div>
 						<div class="itensAdicionadosFalhas">
