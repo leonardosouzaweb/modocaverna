@@ -30,7 +30,7 @@
             <div class="container mt-4">
                 <!-- BANNERS -->
                 <div class="banner mt-4">
-                    <img src="../assets/images/banners/banner3.png">
+                    <?php include_once '../includes/banners.php'; ?>
                 </div>
                 <!-- END -->
 
