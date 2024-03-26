@@ -1,6 +1,6 @@
 <nav>
     <ul>
-        <li class="dropdown">A definir
+        <li class="dropdown">Menu
             <ul class="dropdown-content">
                 <a href="comunidade.php"><li>Comunidade <span>Em breve</span></li></a>
                 <a href="desafio.php"><li>Desafio Modo Caverna</li></a>
