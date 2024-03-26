@@ -136,11 +136,9 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem('desafioIniciado', true);
         removeFilterClasses();
 
-        // Exibir a div activeDay
         const activeDayDiv = document.querySelector('.activeDay');
         activeDayDiv.style.display = '';
 
-        // Marcar no localStorage que a div activeDay foi exibida junto com o desafio iniciado
         localStorage.setItem('activeDayShown', true);
     }
 
@@ -174,7 +172,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const desafioIniciado = localStorage.getItem('desafioIniciado');
 
     if (desafioIniciado === 'true') {
-    // Se o desafio estiver iniciado, esconder o botão "Criar Desafio Caverna" e mostrar o botão "Desafio Ativado"
     const btnCriarDesafio = document.querySelector('.buttonDesafio');
     const btnDesafioAtivado = document.querySelector('.buttonActive');
 
@@ -182,9 +179,7 @@ document.addEventListener("DOMContentLoaded", function() {
     btnDesafioAtivado.style.display = '';
     }
 
-// Função para atualizar o contador
 function atualizarContador() {
-    // Horário limite para manter a div activeDay visível (19:00)
     const limiteHora = 19;
     const limiteMinuto = 0;
     const limiteSegundo = 0;
@@ -196,19 +191,16 @@ function atualizarContador() {
 
     let horasRestantes, minutosRestantes, segundosRestantes;
 
-    // Verifica se ainda não é após o horário limite
     if (horaAtual < limiteHora || (horaAtual === limiteHora && minutoAtual < limiteMinuto)) {
         horasRestantes = limiteHora - horaAtual - 1;
         minutosRestantes = 59 - minutoAtual;
         segundosRestantes = 59 - segundoAtual;
     } else {
-        // Se já passou do horário limite, calcular tempo restante até as 23:59
         horasRestantes = 23 - horaAtual + limiteHora;
         minutosRestantes = 59 - minutoAtual;
         segundosRestantes = 59 - segundoAtual;
     }
 
-    // Corrigir minutos e segundos negativos
     if (minutosRestantes < 0) {
         minutosRestantes += 60;
     }
@@ -216,173 +208,146 @@ function atualizarContador() {
         segundosRestantes += 60;
     }
 
-    // Formata os números para dois dígitos com zero à esquerda
     const horasFormatadas = formatarNumero(horasRestantes);
     const minutosFormatados = formatarNumero(minutosRestantes);
     const segundosFormatados = formatarNumero(segundosRestantes);
 
-    // Atualiza o contador na div activeDay
     const contador = document.querySelector('.activeDay h3');
     contador.textContent = `${horasFormatadas}:${minutosFormatados}:${segundosFormatados}`;
 
-    // Atualiza o contador a cada segundo
     setTimeout(atualizarContador, 1000);
 }
 
-
-// Função para formatar números menores que 10 com um zero à esquerda
 function formatarNumero(numero) {
     return numero < 10 ? '0' + numero : numero;
 }
 
-// Chamada da função para iniciar o contador
 atualizarContador();
 
-// Função para atualizar a visibilidade da div activeDay
 function atualizarVisibilidade() {
     const agora = new Date();
     const horaAtual = agora.getHours();
 
     const activeDayDiv = document.querySelector('.activeDay');
 
-    // Se for antes das 19h ou após as 23:59, mostrar a div activeDay
     if (horaAtual < 19 || horaAtual >= 0 && horaAtual < 4) {
         activeDayDiv.style.display = '';
     } else {
         activeDayDiv.style.display = 'none';
     }
 
-    // Se for 23:59, agendar a próxima atualização para o próximo minuto
     if (horaAtual === 23 && agora.getMinutes() === 59) {
-        setTimeout(atualizarVisibilidade, 60000); // Atualiza a cada minuto
+        setTimeout(atualizarVisibilidade, 60000); 
     } else {
-        // Caso contrário, agendar a próxima atualização para o próximo segundo
-        setTimeout(atualizarVisibilidade, 1000); // Atualiza a cada segundo
+        setTimeout(atualizarVisibilidade, 1000);
     }
 }
 
-// Chamada da função para iniciar a atualização da visibilidade
 atualizarVisibilidade();
 
 function adicionarItemAbdicar(textoItem, isSugestao) {
     const ulItensAdicionados = document.querySelector(".itensAdicionadosAbdicar ul");
     const li = document.createElement("li");
-    li.textContent = textoItem; // Utiliza o texto do item em vez do ID
+    li.textContent = textoItem; 
 
-    // Adicionando um elemento de imagem (ícone de lixeira) para remover o item
     const removerIcone = document.createElement("img");
-    removerIcone.src = "icone-lixeira.png"; // Substitua "icone-lixeira.png" pelo caminho correto do seu ícone
+    removerIcone.src = "icone-lixeira.png"; 
     removerIcone.alt = "Remover";
-    removerIcone.classList.add("removerItem"); // Adicione uma classe para os ícones de remoção
+    removerIcone.classList.add("removerItem");
 
-    // Adicionando evento de clique para remover o item quando o ícone for clicado
     removerIcone.addEventListener("click", () => {
-        ulItensAdicionados.removeChild(li); // Remove o item da lista
+        ulItensAdicionados.removeChild(li); 
     
-        // Remove o item do localStorage
         let itensAdicionados = JSON.parse(localStorage.getItem("itensAdicionadosAbdicar")) || [];
         itensAdicionados = itensAdicionados.filter((i) => i !== textoItem);
         localStorage.setItem("itensAdicionadosAbdicar", JSON.stringify(itensAdicionados));
     
-        // Remover as classes "adicionado" e "active" de todos os elementos <li> na lista de sugestões
         const sugestoes = document.querySelectorAll(".sugestoesAbdicar ul li");
         sugestoes.forEach((sugestao) => {
             sugestao.classList.remove("adicionado", "active");
         });
     });
 
-    li.appendChild(removerIcone); // Adiciona o ícone de remoção ao lado do item
+    li.appendChild(removerIcone); 
     ulItensAdicionados.appendChild(li);
 
-    // Salvando no localStorage
     let itensAdicionados = JSON.parse(localStorage.getItem("itensAdicionadosAbdicar")) || [];
     itensAdicionados.push(textoItem);
     localStorage.setItem("itensAdicionadosAbdicar", JSON.stringify(itensAdicionados));
 }
 
-// Selecionando o botão e a lista de sugestões
 const btnAdicionar = document.getElementById("btnAdicionarAbdicar");
 const sugestoesAbdicar = document.querySelectorAll(".sugestoesAbdicar ul li");
 
-// Adicionando evento de clique para cada item de sugestão
 sugestoesAbdicar.forEach((sugestao) => {
     sugestao.addEventListener("click", () => {
         if (!sugestao.classList.contains("adicionado")) {
-            sugestao.classList.add("adicionado", "active"); // Adiciona a classe "adicionado" e "active" para indicar que o item foi adicionado
-            const itemAdicionado = sugestao.textContent; // Alteração aqui para pegar o texto do item clicado
-            adicionarItemAbdicar(itemAdicionado, true); // Passando true para indicar que o item foi adicionado a partir das sugestões
+            sugestao.classList.add("adicionado", "active"); 
+            const itemAdicionado = sugestao.textContent; 
+            adicionarItemAbdicar(itemAdicionado, true);
         }
     });
 });
 
-// Adicionando evento de clique para o botão "Adicionar"
 btnAdicionar.addEventListener("click", () => {
     const inputAbdicar = document.getElementById("inputAbdicar");
     const novoItem = inputAbdicar.value.trim();
     if (novoItem !== "") {
-        adicionarItemAbdicar(novoItem, false); // Passando false para indicar que o item foi adicionado manualmente
-        inputAbdicar.value = ""; // Limpa o campo de entrada após adicionar
+        adicionarItemAbdicar(novoItem, false); 
+        inputAbdicar.value = ""; 
     }
 });
 
 function adicionarItemFalhar(textoItem, isSugestao) {
     const ulItensAdicionados = document.querySelector(".itensAdicionadosFalhas ul");
     const li = document.createElement("li");
-    li.textContent = textoItem; // Utiliza o texto do item em vez do ID
+    li.textContent = textoItem; 
 
-    // Adicionando um elemento de imagem (ícone de lixeira) para remover o item
     const removerIcone = document.createElement("img");
-    removerIcone.src = "icone-lixeira.png"; // Substitua "icone-lixeira.png" pelo caminho correto do seu ícone
+    removerIcone.src = "icone-lixeira.png"; 
     removerIcone.alt = "Remover";
-    removerIcone.classList.add("removerItem"); // Adicione uma classe para os ícones de remoção
+    removerIcone.classList.add("removerItem"); 
 
-    // Adicionando evento de clique para remover o item quando o ícone for clicado
     removerIcone.addEventListener("click", () => {
-        ulItensAdicionados.removeChild(li); // Remove o item da lista
+        ulItensAdicionados.removeChild(li); 
     
-        // Remove o item do localStorage
         let itensAdicionados = JSON.parse(localStorage.getItem("itensAdicionadosFalhar")) || [];
         itensAdicionados = itensAdicionados.filter((i) => i !== textoItem);
         localStorage.setItem("itensAdicionadosFalhar", JSON.stringify(itensAdicionados));
     
-        // Remover as classes "adicionado" e "active" de todos os elementos <li> na lista de sugestões
         const sugestoes = document.querySelectorAll(".sugestoesFalhas ul li");
         sugestoes.forEach((sugestao) => {
             sugestao.classList.remove("adicionado", "active");
         });
     });
 
-    li.appendChild(removerIcone); // Adiciona o ícone de remoção ao lado do item
+    li.appendChild(removerIcone); 
     ulItensAdicionados.appendChild(li);
 
-    // Salvando no localStorage
     let itensAdicionados = JSON.parse(localStorage.getItem("itensAdicionadosFalhar")) || [];
     itensAdicionados.push(textoItem);
     localStorage.setItem("itensAdicionadosFalhar", JSON.stringify(itensAdicionados));
 }
 
-// Selecionando o botão e a lista de sugestões de falhas
 const btnAdicionarFalhar = document.getElementById("btnAdicionarFalhar");
 const sugestoesFalhas = document.querySelectorAll(".sugestoesFalhas ul li");
 
-// Adicionando evento de clique para cada item de sugestão de falhas
 sugestoesFalhas.forEach((sugestao) => {
     sugestao.addEventListener("click", () => {
         if (!sugestao.classList.contains("adicionado")) {
-            sugestao.classList.add("adicionado", "active"); // Adiciona a classe "adicionado" e "active" para indicar que o item foi adicionado
-            const itemAdicionado = sugestao.textContent; // Alteração aqui para pegar o texto do item clicado
-            adicionarItemFalhar(itemAdicionado, true); // Passando true para indicar que o item foi adicionado a partir das sugestões
+            sugestao.classList.add("adicionado", "active"); 
+            const itemAdicionado = sugestao.textContent; 
+            adicionarItemFalhar(itemAdicionado, true); 
         }
     });
 });
 
-// Adicionando evento de clique para o botão "Adicionar" de falhas
 btnAdicionarFalhar.addEventListener("click", () => {
     const inputFalhar = document.getElementById("inputFalhar");
     const novoItem = inputFalhar.value.trim();
     if (novoItem !== "") {
-        adicionarItemFalhar(novoItem, false); // Passando false para indicar que o item foi adicionado manualmente
-        inputFalhar.value = ""; // Limpa o campo de entrada após adicionar
+        adicionarItemFalhar(novoItem, false); 
+        inputFalhar.value = "";
     }
 });
 
@@ -390,10 +355,8 @@ btnAdicionarFalhar.addEventListener("click", () => {
 const textareaMensagem = document.querySelector(".step3 textarea");
 const btnIniciarDesafio = document.querySelector(".step3 .iniciarDesafio");
 
-// Desabilitar o botão de iniciar desafio por padrão
 btnIniciarDesafio.disabled = true;
 
-// Verificar se há conteúdo na área de texto e habilitar o botão de iniciar desafio conforme necessário
 textareaMensagem.addEventListener("input", () => {
     const mensagem = textareaMensagem.value.trim();
     if (mensagem.length > 0) {
@@ -401,28 +364,21 @@ textareaMensagem.addEventListener("input", () => {
     } else {
         btnIniciarDesafio.disabled = true;
     }
-
-    // Salvando no localStorage
     localStorage.setItem("mensagemDesafio", mensagem);
 });
 
-// Adicionando evento de clique para o botão "Iniciar Desafio"
 btnIniciarDesafio.addEventListener("click", () => {
-    // Aqui você pode adicionar a lógica para iniciar o desafio
-    // Por exemplo: window.location.href = "pagina-do-desafio.html";
+   
 });
 
-// Recuperando os itens salvos no localStorage
 const itensAbdicar = JSON.parse(localStorage.getItem("itensAdicionadosAbdicar")) || [];
 const itensFalhar = JSON.parse(localStorage.getItem("itensAdicionadosFalhar")) || [];
 
-// Selecionando as listas onde os itens serão exibidos
 const listaAbdicar = document.querySelector(".meComprometo ul");
 const listaFalhar = document.querySelector(".naoFalhar ul");
 
-// Função para adicionar os itens às listas HTML
 function adicionarItensLista(itens, lista) {
-    lista.innerHTML = ""; // Limpa a lista para evitar duplicatas
+    lista.innerHTML = ""; 
 
     itens.forEach((item) => {
         const li = document.createElement("li");
@@ -431,18 +387,17 @@ function adicionarItensLista(itens, lista) {
     });
 }
 
-// Adicionando os itens às listas correspondentes
 adicionarItensLista(itensAbdicar, listaAbdicar);
 adicionarItensLista(itensFalhar, listaFalhar);
 
 function calcularDataDesafio() {
     const dataAtual = new Date();
     const diaInicio = dataAtual.getDate();
-    const mesInicio = dataAtual.getMonth() + 1; // Adicionando 1 porque os meses começam do zero (janeiro é 0)
+    const mesInicio = dataAtual.getMonth() + 1;
     const anoInicio = dataAtual.getFullYear();
 
     const dataFinal = new Date(anoInicio, mesInicio, diaInicio);
-    dataFinal.setMonth(dataFinal.getMonth() + 1); // Adicionando um mês à data de início
+    dataFinal.setMonth(dataFinal.getMonth() + 1);
 
     const diaFinal = dataFinal.getDate();
     const mesFinal = dataFinal.getMonth();
@@ -458,11 +413,7 @@ function formatDay(day) {
     return day < 10 ? '0' + day : day;
 }
 
-// Chamando a função para calcular as datas do desafio
 const datasDesafio = calcularDataDesafio();
 
-// Exibindo as datas no elemento HTML
 document.getElementById('inicioDesafio').innerText = `Inicio: ${datasDesafio.inicioDesafio} - Finaliza em: ${datasDesafio.finalDesafio}`;
-
-
 });

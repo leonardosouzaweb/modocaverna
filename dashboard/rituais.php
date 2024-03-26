@@ -34,13 +34,16 @@
                         
                         <div class="ritual">
                             <div>
-                                <span>☀️ Ritual Matinal</span>
+                                <span class="mt-0">☀️ Ritual Matinal <button class="btnAddBlocoMatinal" style="display:none;" data-bs-toggle="modal" data-bs-target="#modalRitualMatinal">Criar bloco</button></span>
                                 <div class="createBlockMatinal" data-bs-toggle="modal" data-bs-target="#modalRitualMatinal">
-                                    <span>Criar bloco</span>
+                                    <span class="mt-0">Criar bloco</span>
                                 </div>
 
                                 <div class="ritualBlockAddMatinal">
-                                    
+                                    <span>{comeca} às {termina}</span>
+                                    <ul>
+                                        <li>{descricao}</li>
+                                    </ul>
                                 </div>
 
                                 <div class="metasRitual">
@@ -53,12 +56,15 @@
                             </div>
 
                             <div>
-                                <span>🌙 Ritual Noturno</span>
+                                <span class="mt-0">🌙 Ritual Noturno <button class="btnAddBlocoNoturno" style="display:none;" data-bs-toggle="modal" data-bs-target="#modalRitualNoturno">Criar bloco</button></span>
                                 <div class="createBlockNoturno" data-bs-toggle="modal" data-bs-target="#modalRitualNoturno">
-                                    <span>Criar bloco</span>
+                                    <span class="mt-0">Criar bloco</span>
                                 </div>
                                 <div class="ritualBlockAddNoturno">
-                                    
+                                    <span>{comeca} às {termina}</span>
+                                    <ul>
+                                        <li>{descricao}</li>
+                                    </ul>
                                 </div>
 
                                 <div class="metasRitual">
@@ -84,7 +90,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/functionsRitualMatinal.js"></script>
-    <script src="../assets/js/functionsRitualNoturno.js"></script>
+    <script src="../assets/js/functionsRituais.js"></script>
 </body>
 </html>

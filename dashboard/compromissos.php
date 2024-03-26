@@ -13,6 +13,38 @@
     <!-- GLOBAL CSS -->
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
     <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/customCalendar.css" rel="stylesheet">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: [
+                    {
+                        title: 'Evento Teste',
+                        duration: '20:00',
+                        start: '2024-03-25',
+                        end: '2024-03-28'
+                    },
+                    {
+                        title: 'Evento Teste',
+                        duration: '20:00',
+                        start: '2024-03-05',
+                        end: '2024-03-07'
+                    },
+                    {
+                        title: 'Evento Teste',
+                        duration: '20:00',
+                        start: '2024-03-05',
+                        end: '2024-03-05'
+                    },
+                    
+                ]
+            });
+            calendar.render();
+        });
+    </script>
 </head>
 <body>
     <div class="main">
@@ -30,36 +62,16 @@
             <div class="container">
                 <div class="defaultPage2">
                     <div class="conteudoPage">
-                        <h1>Mindfulness</h1>
-
-                        <span>Técnicas de respiração</span>
-                        <div class="mindfulness mb-5">
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                        <div class="compromissos">
+                            <h1>Compromissos e Objetivos</h1>
+                            <div id="calendar" class="mb-5"></div>
                         </div>
-
-                        <span>Meditação Guiada</span>
-                        <div class="mindfulness mb-5">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-
-                        <span>Feche os olhos e escute a mensagem</span>
-                        <div class="mindfulness mb-5">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- MODALS -->
-    <div class="globalModals">
-        <?php include_once '../modals/desafio.php'; ?>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

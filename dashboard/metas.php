@@ -32,13 +32,13 @@
                     <div class="conteudoPage">
                         <h1>Metas</h1>
                         <div class="metasHead">
-                            <span>🎯 Objetivo Pricipal</span>
+                            <span class="mt-0">🎯 Objetivo Pricipal</span>
                             <p>Preciso estar preparado para as oportunidades que surgirão esse ano.</p>
                         </div>
 
                         <div class="contentMetas">
                             <div>
-                                <span>❓Como? O que preciso fazer?</span>
+                                <span class="mt-0">❓Como? O que preciso fazer?</span>
                                 <ul>
                                     <li>1. Me conectar com Deus</li>
                                     <li>2. Focar mais em mim e evitar comparações</li>
@@ -53,7 +53,7 @@
                             </div>
 
                             <div>
-                                <span>❤️ Quadro dos sonhos</span>
+                                <span class="mt-0">❤️ Quadro dos sonhos</span>
                                 <div class="itens">
                                     <div class="boxImage" onclick="uploadImage(this)">
                                         <img src="../assets/images/icons/icImage.svg" alt="Upload Image">
@@ -73,7 +73,7 @@
 
                         <div class="metasEdit mb-5">
                             <div>
-                                <span>✅ Metas - 01 de Janeiro a 30 de Junho</span>
+                                <span class="mt-0">✅ Metas - 01 de Janeiro a 30 de Junho</span>
                                 <p>1. Saúde</p>
                                 <input type="text" placeholder="Digite sua meta" class="form-control" data-index="1">
 
@@ -96,7 +96,7 @@
                                 <input type="text" placeholder="Digite sua meta" class="form-control" data-index="7">
                             </div>
                             <div>
-                                <span>✅ Metas - 01 de Julho a 31 de Dezembro</span>
+                                <span class="mt-0">✅ Metas - 01 de Julho a 31 de Dezembro</span>
                                 <p>1. Saúde</p>
                                 <input type="text" placeholder="Digite sua meta" class="form-control" data-index="8">
 

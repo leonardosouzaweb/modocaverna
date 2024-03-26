@@ -1,0 +1,16 @@
+.fc-col-header a { color: #fff; text-decoration: none; }
+
+.fc-theme-standard .fc-scrollgrid { border: 1px solid rgba(255,255,255,0.2);}
+.fc-theme-standard td, .fc-theme-standard th { border: 1px solid rgba(255,255,255,0.2); }
+
+
+.fc-h-event { border: none; background: #d11f1f; padding:3px 10px; margin-bottom: 10px; }
+.fc-h-event .fc-event-main { background: #d11f1f; font-weight: bold; border-radius: 10px; } 
+
+.fc .fc-daygrid-day-number { color: #fff; text-decoration: none; font-size: 20px;}
+.fc .fc-daygrid-day.fc-day-today { background: #ffffff1c; }
+
+.fc .fc-today-button { background: #d11f1f; border: 1px solid transparent; padding: 6px 40px; }
+.fc .fc-today-button:disabled { background: #757575; border: 1px solid transparent; padding: 6px 40px; }
+.fc-direction-ltr .fc-button-group > .fc-button:not(:last-child) { border-bottom-right-radius: 0px; border-top-right-radius: 0px; background: #d11f1f; border: none; }
+.fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) { border-bottom-left-radius: 0px; border-top-left-radius: 0px; margin-left: -1px; background: #d11f1f; border: none; }

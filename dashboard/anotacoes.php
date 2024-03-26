@@ -30,38 +30,36 @@
             <div class="container">
                 <div class="defaultPage2">
                     <div class="conteudoPage">
-                        <h1>Mindfulness</h1>
+                        <div class="anotacoes">
+                            <div class="headNota">
+                                <h1 class="mb-5">Anotações</h1>
+                            </div>
 
-                        <span>Técnicas de respiração</span>
-                        <div class="mindfulness mb-5">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
+                            <div class="areaText">
+                                <textarea id="tiny"></textarea>
+                            </div>
 
-                        <span>Meditação Guiada</span>
-                        <div class="mindfulness mb-5">
-                            <div></div>
-                            <div></div>
-                            <div></div>
+                            <div class="buttons">
+                                <button>Criar anotação</button>
+                            </div>
                         </div>
-
-                        <span>Feche os olhos e escute a mensagem</span>
-                        <div class="mindfulness mb-5">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- MODALS -->
-    <div class="globalModals">
-        <?php include_once '../modals/desafio.php'; ?>
-    </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/qpc2a5zn0wrmdri6env1lgotvxyf3fuaqq6e1rbnz19lk4xc/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <script>
+    tinymce.init({
+        selector: 'textarea#tiny',
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+    });
+</script>
 </body>
 </html>

@@ -32,9 +32,10 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .heading .container .menu nav ul li.loja { border-radius: 10px; background: #E6792A; }
 
 .main .wrapper .heading .container .menu nav ul li:last-child { border: none;  }
-.main .wrapper .heading .container .menu nav ul .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 310px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); z-index: 1; top: 100%;  right:0px; padding: 20px; border-radius: 10px; }
+.main .wrapper .heading .container .menu nav ul .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 310px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); z-index: 999999999; top: 100%;  right:0px; padding: 20px; border-radius: 10px; }
 .main .wrapper .heading .container .menu nav ul .dropdown:hover .dropdown-content { display: block; list-style: none; padding: 15px 0px; margin: 0; }
 .main .wrapper .heading .container .menu nav ul .dropdown:hover .dropdown-content li { color: rgba(0,0,0,0.5); line-height: 40px; transition: all 0.3s; }
+.main .wrapper .heading .container .menu nav ul .dropdown:hover .dropdown-content li span { background: #D11F1F; color: #fff; font-size: 12px; border-radius: 20px; padding: 3px 10px; position: relative; top: -3px; font-weight: bold;}
 .main .wrapper .heading .container .menu nav ul .dropdown:hover .dropdown-content li:hover { cursor:pointer; color: rgba(0,0,0,0.9); }
 .main .wrapper .heading .container .menu nav ul .dropdown:after { content: url('../images/icons/icDown.svg'); margin-left: 5px; position: absolute; top: 55%; transform: translateY(-50%);right: 5px; }
 .main .wrapper .heading .container .menu nav ul .dropdown:hover:after { content: url('../images/icons/icUp.svg');   }
@@ -305,6 +306,7 @@ p { font-size: 16px; line-height: 25.6px; }
 
 .main .wrapper .container .defaultPage2 { width: 100%; margin-top: 120px;  }
 .main .wrapper .container .defaultPage2 h1 { color: #fff; font-weight: 300; font-size: 35px; }
+.main .wrapper .container .defaultPage2 span { color: #fff; font-size: 25px; margin-top: 50px; display: block; }
 
 .main .wrapper .container .defaultPage2 .tutoriais { display: flex; align-items: center; gap: 30px; margin-top: 30px; flex-wrap: wrap; }
 .main .wrapper .container .defaultPage2 .tutoriais div { background: #121212; width: 23%; height: 250px; border-radius: 15px; }
@@ -338,7 +340,7 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .defaultPage2 .metasEdit div p { color: rgba(255,255,255,0.8); margin-bottom: 0; font-size: 17px; margin-top: 5px; }
 .main .wrapper .container .defaultPage2 .metasEdit div input.form-control { margin-top: 3px; border: none; background: transparent; border-radius: 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding: 5px 0px; margin-bottom: 20px; color: #fff; font-size: 14px;}
 .main .wrapper .container .defaultPage2 .metasEdit div input.form-control:focus { box-shadow: none; border: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
-.main .wrapper .container .defaultPage2 .metasEdit div input.form-control::placeholder { color: rgba(255,255,255,0.4); opacity: 1; }
+.main .wrapper .container .defaultPage2 .metasEdit div input.form-control::placeholder { color: rgba(255,255,255,0.2); opacity: 1; }
 .main .wrapper .container .defaultPage2 .metasEdit div input.form-control::-ms-input-placeholder { color: rgba(255,255,255,0.4); }
 
 .main .wrapper .container .defaultPage2 .metasEdit div:nth-child(1) { width: 50%; }
@@ -347,6 +349,13 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .defaultPage2 .ritual { display:flex; justify-content: space-between; gap: 30px; margin-top: 30px; }
 .main .wrapper .container .defaultPage2 .ritual div { background: #121212; border-radius: 15px; padding: 20px 30px; width: 50%; }
 .main .wrapper .container .defaultPage2 .ritual div span { font-size: 20px; color: #fff; margin-bottom: 20px; display: block; }
+.main .wrapper .container .defaultPage2 .ritual div span button.btnAddBlocoMatinal { background: rgb(45, 45, 45); border: none; float: right; border-radius: 10px; color: #fff; padding: 5px 30px; font-size: 16px; margin-top: -2px; transition: all 0.3s; }
+.main .wrapper .container .defaultPage2 .ritual div span button.btnAddBlocoMatinal:hover { background: rgb(63, 63, 63); }
+
+.main .wrapper .container .defaultPage2 .ritual div span button.btnAddBlocoNoturno { background: rgb(45, 45, 45); border: none; float: right; border-radius: 10px; color: #fff; padding: 5px 30px; font-size: 16px; margin-top: -2px; transition: all 0.3s; }
+.main .wrapper .container .defaultPage2 .ritual div span button.btnAddBlocoNoturno:hover { background: rgb(63, 63, 63); }
+
+
 .main .wrapper .container .defaultPage2 .ritual div .ritualBlockAddMatinal { padding: 20px 30px; margin-top: 20px; border: 1px dashed rgba(255,255,255,0.1); width: 100%; }
 .main .wrapper .container .defaultPage2 .ritual div .ritualBlockAddMatinal span { margin: 0; margin-bottom: 10px;}
 .main .wrapper .container .defaultPage2 .ritual div .ritualBlockAddMatinal ul { list-style: none; padding: 0; margin: 0; }
@@ -370,6 +379,23 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .defaultPage2 .ritual div .metasRitual ul { list-style: none; margin: 0; padding: 0; margin-top: 10px; }
 .main .wrapper .container .defaultPage2 .ritual div .metasRitual ul li { color: rgba(255,255,255,0.4); }
 
+
+.main .wrapper .container .defaultPage2 .mindfulness { display: flex; align-items: center; gap: 30px; margin-top: 30px; flex-wrap: wrap; }
+.main .wrapper .container .defaultPage2 .mindfulness div { background: #121212; width: 31.7%; height: 250px; border-radius: 15px; }
+
+
+.main .wrapper .container .defaultPage2 .anotacoes .headNota { display: flex; align-items: center; }
+.main .wrapper .container .defaultPage2 .anotacoes .headNota h1 { margin-bottom: 0; }
+.main .wrapper .container .defaultPage2 .anotacoes .buttons { margin-left: auto; margin-top: 30px; }
+.main .wrapper .container .defaultPage2 .anotacoes .buttons button { background: rgb(45, 45, 45); border: none; float: right; border-radius: 10px; color: #fff; padding: 8px 50px; font-size: 18px; margin-top: -2px; transition: all 0.3s; }
+.main .wrapper .container .defaultPage2 .anotacoes .buttons button:nth-child(2) { margin-right: 20px; }
+.main .wrapper .container .defaultPage2 .anotacoes .buttons button:hover { background: rgb(63, 63, 63); }
+
+.main .wrapper .container .defaultPage2 .anotacoes .areaText { position: relative; z-index: 0 !important; }
+.main .wrapper .container .defaultPage2 .anotacoes .areaText textarea { height:500px; position: relative; z-index: -1; }
+.main .wrapper .container .defaultPage2 .anotacoes .areaText span { margin-top: 0; display: initial; font-size: initial; color: initial; }
+
+.main .wrapper .container .defaultPage2 .compromissos span { margin-top: 0;}
 
 
 
