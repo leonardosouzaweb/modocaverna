@@ -7,12 +7,12 @@
                 <a href="metas.php"><li>Metas </li></a>
                 <a href="compromissos.php"><li>Compromissos e Objetivos </li></a>
                 <a href="rituais.php"><li>Rituais</li></a>
-                <a href="treino-alimentacao.php"><li>Treino e Alimentação <span>F</span></li></a>
+                <a href="treino-alimentacao.php"><li>Treino e Alimentação</li></a>
                 <a href="flow-caverna.php"><li>Flow Caverna </li></a>
                 <a href="mindfulness.php"><li>Mindfulness</li></a>
                 <a href="anotacoes.php"><li>Anotações e Lembretes</li></a>
                 <a href="conhecimento.php"><li>Conhecimento </li></a>
-                <a href="financeiro.php"><li>Financeiro <span>F</span> </li></a>
+                <a href="financeiro.php"><li>Financeiro </li></a>
                 <a href="conteudos.php"><li>Manual de Uso e Conteúdos</li></a>
                 
             </ul>
