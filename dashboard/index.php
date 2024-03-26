@@ -77,6 +77,11 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <p>Todos os direitos reservados a Modo Caverna.</p>
+        </div>
+    </footer>
     <!-- MODALS -->
     <div class="globalModals">
         <?php include_once '../modals/naoEsquecer.php'; ?>

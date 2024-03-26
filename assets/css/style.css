@@ -438,6 +438,8 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .defaultPage2 .dieta div .form-check .form-check-input:focus { box-shadow: none; }
 .main .wrapper .container .defaultPage2 .dieta div .form-check .form-check-label { color: #B5B5B5; }
 
+footer { margin-bottom: 100px; }
+footer p { color: #fff; }
 
 
 
