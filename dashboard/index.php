@@ -79,7 +79,7 @@
     </div>
     <footer>
         <div class="container">
-            <p>Todos os direitos reservados a Modo Caverna.</p>
+            <p>© 2024 Iuri Meira - Modo Caverna. Todos os direitos reservados.</p>
         </div>
     </footer>
     <!-- MODALS -->
