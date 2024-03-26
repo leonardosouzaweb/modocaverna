@@ -8,10 +8,10 @@
         <li class="empty">Nenhuma refeição adicionada</li>
     </ul>
 
-    <div class="add">
+    <!-- <div class="add">
         <div class="info">
             <img src="../assets/images/icons/icAdd.svg">
             <span data-bs-toggle="modal" data-bs-target="#addRefeicao">Novo</span>
         </div>
-    </div>
+    </div> -->
 </div>
