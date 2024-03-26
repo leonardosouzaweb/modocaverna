@@ -41,7 +41,7 @@
                     </div>
 
                     <div>
-                        <h5>Olá Iuri</h5>
+                        <h5>Olá Iuri!</h5>
                         <p id="dynamicPhrase"></p>
                     </div>
 
