@@ -47,7 +47,7 @@
 
                     <div>
                         <button class="ranking"><img src="../assets/images/icons/icTrophy.svg">Ranking e Premiações</button>
-                        <button class="perfil">Perfil caverna</button>
+                        <a href="../dashboard/perfil.php"><button class="perfil">Perfil caverna</button></a>
                     </div>
                 </div>
                 <!-- END -->
