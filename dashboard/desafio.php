@@ -36,7 +36,7 @@
                         </div>
                         <div>
                             <p>Como funciona o Desafio? <span>Clique no botão ao lado para saber mais sobre o Desafio Caverna</span></p>
-                            <button>Ver tutorial</button>
+                            <button data-bs-toggle="modal" data-bs-target="#modalVideo">Ver tutorial</button>
                         </div>
                     </div>
 
@@ -121,6 +121,7 @@
     <!-- MODALS -->
     <div class="globalModals">
         <?php include_once '../modals/desafio.php'; ?>
+        <?php include_once '../modals/tutorial.php'; ?>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

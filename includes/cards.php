@@ -1,6 +1,6 @@
 <div class="hvr-grow">
     <a href="comunidade.php"><img src="../assets/images/covers/default.png"></a>
-    <span>Comunidade</span>
+    <span>🧑‍🤝‍🧑 Comunidade</span>
     <div class="mask"></div>
 </div>
 
