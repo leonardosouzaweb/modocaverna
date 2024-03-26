@@ -28,107 +28,139 @@
                 </div>
             </div>
             <div class="container">
-                <div class="defaultPage">
-                    <div class="infoPage">
-                        <h1>Conheça minha lista de sugestões de leitura e vídeos</h1>
-                        <p>Os livros e vídeos que mais impactaram a minha vida e que certamente te ajudarão no seu processo.</p>
-                        
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="livros-tab" data-bs-toggle="tab" data-bs-target="#livros-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Livros</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="cursos-tab" data-bs-toggle="tab" data-bs-target="#cursos-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Cursos</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="podcasts-tab" data-bs-toggle="tab" data-bs-target="#podcasts-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Podcasts</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="livros-tab-pane" role="tabpanel" aria-labelledby="livros-tab" tabindex="0">
-                                <div class="livros">
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
-
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
-
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
-
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
-
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
+                <div class="defaultPage2">
+                    <div class="conhecimento">
+                         <img src="../assets/images/banners/banner-livros.png">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-lista-tab" data-bs-toggle="tab" data-bs-target="#nav-lista" type="button" role="tab" aria-controls="nav-lista" aria-selected="true">Lista de Desejos</button>
+                                    <button class="nav-link" id="nav-biblioteca-tab" data-bs-toggle="tab" data-bs-target="#nav-biblioteca" type="button" role="tab" aria-controls="nav-biblioteca" aria-selected="false">Minha Biblioteca</button>
+                                    <button class="nav-link" id="nav-andamento-tab" data-bs-toggle="tab" data-bs-target="#nav-andamento" type="button" role="tab" aria-controls="nav-andamento" aria-selected="false">Em Andamento</button>
+                                    <button class="nav-link" id="nav-concluido-tab" data-bs-toggle="tab" data-bs-target="#nav-concluido" type="button" role="tab" aria-controls="nav-concluido" aria-selected="false">Concluidos</button>
                                 </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-lista" role="tabpanel" aria-labelledby="nav-lista-tab" tabindex="0">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Categoria</th>
+                                            <th>Onde comprar</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Bíblia King James 1611</td>
+                                            <td><span class="badge bg-primary">Desenvolvimento Pessoal</span></td>
+                                            <td>🔗 https://amzn.to/3SD24OZ</td>
+                                            <td>✅ Concluido</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Café com Deus Pai</td>
+                                            <td><span class="badge bg-primary">Desenvolvimento Pessoal</span></td>
+                                            <td>🔗 https://amzn.to/3SD24OZ</td>
+                                            <td>✅ Concluido</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>O Almanaque de Naval</td>
+                                            <td><span class="badge bg-success">Negocios</span></td>
+                                            <td>🔗 https://amzn.to/3SD24OZ</td>
+                                            <td>✅ Concluido</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>O Homem Mais Rico da Babilônia</td>
+                                            <td><span class="badge bg-warning">Finanças</span></td>
+                                            <td>🔗 https://amzn.to/3SD24OZ</td>
+                                            <td>✅ Concluido</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>A psicologia financeira</td>
+                                            <td><span class="badge bg-secondary">Psicologia</span></td>
+                                            <td>🔗 https://amzn.to/3SD24OZ</td>
+                                            <td>✅ Concluido</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="tab-pane fade" id="cursos-tab-pane" role="tabpanel" aria-labelledby="cursos-tab" tabindex="0">
-                            <div class="livros">
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
+                            <div class="tab-pane fade" id="nav-biblioteca" role="tabpanel" aria-labelledby="nav-biblioteca-tab" tabindex="0">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Categoria</th>
+                                            <th>Onde comprar</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Bíblia King James 1611</td>
+                                            <td><span class="badge bg-primary">Desenvolvimento Pessoal</span></td>
+                                            <td>🔗 https://amzn.to/3SD24OZ</td>
+                                            <td>✅ Concluido</td>
+                                        </tr>
 
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
+                                        <tr>
+                                            <td>Café com Deus Pai</td>
+                                            <td><span class="badge bg-primary">Desenvolvimento Pessoal</span></td>
+                                            <td>🔗 https://amzn.to/3SD24OZ</td>
+                                            <td>✅ Concluido</td>
+                                        </tr>
 
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
-
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
-
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
-                                </div>
+                                        <tr>
+                                            <td>O Almanaque de Naval</td>
+                                            <td><span class="badge bg-success">Negocios</span></td>
+                                            <td>🔗 https://amzn.to/3SD24OZ</td>
+                                            <td>✅ Concluido</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            
-                            <div class="tab-pane fade" id="podcasts-tab-pane" role="tabpanel" aria-labelledby="podcasts-tab" tabindex="0">
-                            <div class="livros">
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
-
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
-
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
-
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
-
-                                    <div>
-                                        <img src="../assets/images/livros/livro1.png">
-                                        <span>Nome do Livro</span>
-                                    </div>
-                                </div>
+                            <div class="tab-pane fade" id="nav-andamento" role="tabpanel" aria-labelledby="nav-andamento-tab" tabindex="0">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Categoria</th>
+                                            <th>Onde comprar</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Bíblia King James 1611</td>
+                                            <td><span class="badge bg-primary">Desenvolvimento Pessoal</span></td>
+                                            <td>🔗 https://amzn.to/3SD24OZ</td>
+                                            <td>✅ Concluido</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="nav-concluido" role="tabpanel" aria-labelledby="nav-concluido-tab" tabindex="0">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Categoria</th>
+                                            <th>Onde comprar</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Bíblia King James 1611</td>
+                                            <td><span class="badge bg-primary">Desenvolvimento Pessoal</span></td>
+                                            <td>🔗 https://amzn.to/3SD24OZ</td>
+                                            <td>✅ Concluido</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

@@ -397,6 +397,17 @@ p { font-size: 16px; line-height: 25.6px; }
 
 .main .wrapper .container .defaultPage2 .compromissos span { margin-top: 0;}
 
+.main .wrapper .container .defaultPage2 .conhecimento img { width: 100%; }
+.main .wrapper .container .defaultPage2 .conhecimento tr td { vertical-align: middle; }
+.main .wrapper .container .defaultPage2 .conhecimento span { margin: 0; font-size: 14px; display: inline-block; padding: 6px 20px;}
+.main .wrapper .container .defaultPage2 .conhecimento table thead tr th { background: transparent; color: #fff; font-size: 18px !important; font-weight: 500; border-bottom: 1px solid #3f3f3f9c; }
+.main .wrapper .container .defaultPage2 .conhecimento table tbody tr td { background: transparent; color: #fff;  border-bottom: 1px solid #272727; padding: 20px 10px; font-size: 17px;}
+.main .wrapper .container .defaultPage2 .conhecimento .badge.bg-primary { background-color: #D11F1F !important; color:#fff; }
+.main .wrapper .container .defaultPage2 .conhecimento .badge.bg-success { background-color: #27ae60 !important; color:#fff; }
+.main .wrapper .container .defaultPage2 .conhecimento .badge.bg-warning { background-color: #3498db !important; color:#fff; }
+.main .wrapper .container .defaultPage2 .conhecimento .badge.bg-secondary { background-color: #bdc3c7 !important; color:#000; }
+.main .wrapper .container .defaultPage2 .conhecimento .tab-pane { padding: 20px 0px; }
+
 
 
 
