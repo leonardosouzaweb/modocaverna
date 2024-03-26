@@ -34,44 +34,81 @@
                         
                         <div class="ritual">
                             <div>
-                                <span class="mt-0">☀️ Ritual Matinal <button class="btnAddBlocoMatinal" style="display:none;" data-bs-toggle="modal" data-bs-target="#modalRitualMatinal">Criar bloco</button></span>
+                                <span class="mt-0">☀️ Ritual Matinal <button class="btnAddBlocoMatinal" style="display:block;" data-bs-toggle="modal" data-bs-target="#modalRitualMatinal">Criar bloco</button></span>
                                 <div class="createBlockMatinal" data-bs-toggle="modal" data-bs-target="#modalRitualMatinal">
                                     <span class="mt-0">Criar bloco</span>
                                 </div>
 
                                 <div class="ritualBlockAddMatinal">
-                                    <span>{comeca} às {termina}</span>
+                                    <span>⏰ 06:00 às 08:00</span>
                                     <ul>
-                                        <li>{descricao}</li>
+                                        <li>Acordar → Água → Banho Gelado → Silêncio</li>
+                                        <li>Exercício Físico (Treino 01 - Verificar)</li>
+                                        <li>Imersão Piscina</li>
+                                        <li>Tempo com os Dogs</li>
+                                    </ul>
+                                </div>
+
+                                <div class="ritualBlockAddMatinal">
+                                    <span>⏰ 08:00 às 08:40</span>
+                                    <ul>
+                                        <li>Banho</li>
+                                        <li>Leitura</li>
+                                        <li>Devocional</li>
+                                        <li>Café da Manhã → Redes Sociais</li>
+                                        <li>Cuidados Pessoais</li>
+                                        <li>Suplementação → Água e Whey [Caverna]</li>
+                                    </ul>
+                                </div>
+
+                                <div class="ritualBlockAddMatinal">
+                                    <span>⏰ 09:00</span>
+                                    <ul>
+                                        <li>Ativar o Flow Caverna</li>
                                     </ul>
                                 </div>
 
                                 <div class="metasRitual">
                                     <span>🎯 Metas do Ritual Matinal</span>
                                     <ul>
-                                        <li>- Beber 1 litro de água</li>
-                                        <li>- Aumentar a energia para ativar o Flow</li>
+                                        <li contenteditable="true">- Beber 1 litro de água</li>
+                                        <li contenteditable="true">- Aumentar a energia para ativar o Flow</li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div>
-                                <span class="mt-0">🌙 Ritual Noturno <button class="btnAddBlocoNoturno" style="display:none;" data-bs-toggle="modal" data-bs-target="#modalRitualNoturno">Criar bloco</button></span>
+                                <span class="mt-0">🌙 Ritual Noturno <button class="btnAddBlocoNoturno" style="display:block;" data-bs-toggle="modal" data-bs-target="#modalRitualNoturno">Criar bloco</button></span>
                                 <div class="createBlockNoturno" data-bs-toggle="modal" data-bs-target="#modalRitualNoturno">
                                     <span class="mt-0">Criar bloco</span>
                                 </div>
-                                <div class="ritualBlockAddNoturno">
-                                    <span>{comeca} às {termina}</span>
+                                <div class="ritualBlockAddMatinal">
+                                    <span>⏰ 22:30 às 23:00</span>
                                     <ul>
-                                        <li>{descricao}</li>
+                                        <li>Check na Central Caverna</li>
+                                        <li>Preencher Desafio Modo Caverna</li>
+                                        <li>Verificar Compromissos/Objetivos de amanhã</li>
+                                        <li>Preparar Ritual Matinal</li>
+                                        <li>Água ao lado da cama</li>
+                                        <li>Roupa do treino (Caso faça)</li>
+                                        <li>Banho Quente → Cuidados Pessoais </li>
+                                        <li>Preparar Ambiente [Cortina aberta]</li>
+                                    </ul>
+                                </div>
+
+                                <div class="ritualBlockAddMatinal">
+                                    <span>⏰ 23:00</span>
+                                    <ul>
+                                        <li>Leitura do Diário Estoico</li>
+                                        <li>Oração → Dormir</li>
                                     </ul>
                                 </div>
 
                                 <div class="metasRitual">
                                     <span>🎯 Metas do Ritual Matinal</span>
                                     <ul>
-                                        <li>- Dormir com clareza do amanhã</li>
-                                        <li>- Dormir com a tranquilidade de que fiz tudo o que podia ter feito</li>
+                                        <li contenteditable="true">- Dormir com clareza do amanhã</li>
+                                        <li contenteditable="true">- Dormir com a tranquilidade de que fiz tudo o que podia ter feito</li>
                                     </ul>
                                 </div>
                             </div>

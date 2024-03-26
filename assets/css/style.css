@@ -406,7 +406,37 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .defaultPage2 .conhecimento .badge.bg-success { background-color: #27ae60 !important; color:#fff; }
 .main .wrapper .container .defaultPage2 .conhecimento .badge.bg-warning { background-color: #3498db !important; color:#fff; }
 .main .wrapper .container .defaultPage2 .conhecimento .badge.bg-secondary { background-color: #bdc3c7 !important; color:#000; }
+
 .main .wrapper .container .defaultPage2 .conhecimento .tab-pane { padding: 20px 0px; }
+
+.main .wrapper .container .defaultPage2 .treinos .tab-pane { padding: 20px 0px; }
+.main .wrapper .container .defaultPage2 .treinos .tab-pane .treinoInfo { display: flex; gap:30px; }
+.main .wrapper .container .defaultPage2 .treinos .tab-pane .treinoInfo .card { width: 50%; padding: 30px; border: 1px solid transparent; border-radius: 15px; }
+.main .wrapper .container .defaultPage2 .treinos .tab-pane .treinoInfo .card span { margin: 0; font-size: 14px; padding: 6px 20px; display: inline-block !important;}
+.main .wrapper .container .defaultPage2 .treinos .tab-pane .treinoInfo .card h4 { color: #000; display: flex; justify-content: space-between; align-items: center; margin-top: -10px; margin-bottom: 20px;}
+.main .wrapper .container .defaultPage2 .treinos .tab-pane .treinoInfo .card h4 button { background: rgb(45, 45, 45); border: none; border-radius: 10px; color: #fff; padding: 5px 30px; font-size: 16px; transition: all 0.3s; }
+.main .wrapper .container .defaultPage2 .treinos .tab-pane .treinoInfo .card h4 button:hover { background: rgb(80, 80, 80); }
+.main .wrapper .container .defaultPage2 .treinos .tab-pane .treinoInfo .card h6 { font-size: 20px; margin: 10px 0; margin-bottom: 20px;}
+.main .wrapper .container .defaultPage2 .treinos .tab-pane .treinoInfo .card hr { opacity: 0.1; padding: 5px 0; margin: 0;}
+.main .wrapper .container .defaultPage2 .treinos .tab-pane .treinoInfo .card small { font-size: 18px; margin-bottom: 10px; }
+.main .wrapper .container .defaultPage2 .treinos .tab-pane .treinoInfo .card .badge.bg-primary { background-color: #D11F1F !important; color:#fff; width: auto; }
+
+
+
+.main .wrapper .container .defaultPage2 .dieta { display: flex; width: 100%; margin-top: 20px; gap: 30px; }
+.main .wrapper .container .defaultPage2 .dieta div { border-radius: 15px; background: #121212; padding: 25px 30px; width: 33%; }
+.main .wrapper .container .defaultPage2 .dieta div .minCard { width: 100%; padding: 0; margin: 0; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 15px 20px; margin-bottom: 20px; transition: all 0.3s; }
+.main .wrapper .container .defaultPage2 .dieta div .minCard:hover { background: rgba(255,255,255,0.1); border: 1px solid transparent; }
+.main .wrapper .container .defaultPage2 .dieta div .minCard h6 { color: #fff; }
+.main .wrapper .container .defaultPage2 .dieta div .minCard small { color: rgba(255,255,255,0.5); display: block; margin-bottom: 0; } 
+.main .wrapper .container .defaultPage2 .dieta div img.cook { width: 100%; margin-top: 30px; }
+.main .wrapper .container .defaultPage2 .dieta div .title { display: flex; gap: 20px; align-items: center; padding: 0; width: 100%; margin: 10px 0px 25px 0px; }
+.main .wrapper .container .defaultPage2 .dieta div .title span { color: #fff; font-size: 20px; margin: 0;}
+.main .wrapper .container .defaultPage2 .dieta div .form-check { width: 100%; gap: 20px; display: flex; align-items: center; padding: 10px 24px; }
+.main .wrapper .container .defaultPage2 .dieta div .form-check .form-check-input { width: 20px; height: 20px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.2); background-color: transparent; }
+.main .wrapper .container .defaultPage2 .dieta div .form-check .form-check-input:checked { background-color: #D11F1F; }
+.main .wrapper .container .defaultPage2 .dieta div .form-check .form-check-input:focus { box-shadow: none; }
+.main .wrapper .container .defaultPage2 .dieta div .form-check .form-check-label { color: #B5B5B5; }
 
 
 
