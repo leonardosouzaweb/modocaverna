@@ -29,7 +29,7 @@
             </div>
             <div class="container">
                 <div class="defaultPage2">
-                    <div class="conteudoPage">
+                    <div class="conteudoPage mb-5">
                         <h1>Mindfulness</h1>
 
                         <span>Técnicas de respiração</span>
@@ -57,6 +57,7 @@
             </div>
         </div>
     </div>
+    <?php include_once '../includes/footer.php'; ?>
     <!-- MODALS -->
     <div class="globalModals">
         <?php include_once '../modals/desafio.php'; ?>

@@ -182,7 +182,7 @@
                         </div>
                         <!-- COMPRAS -->
                         <h1>Dieta e Suplementação</h1>
-                        <div class="dieta">
+                        <div class="dieta mb-5">
                             <div>
                                 <div class="title">
                                     <img src="../assets/images/icons/icCheckList.svg">
@@ -317,6 +317,8 @@
             </div>
         </div>
     </div>
+    <?php include_once '../includes/footer.php'; ?>
+    
     <!-- MODALS -->
     <div class="globalModals">
         <?php include_once '../modals/desafio.php'; ?>

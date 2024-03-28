@@ -29,12 +29,12 @@
             </div>
             <div class="container">
                 <div class="defaultPage2">
-                    <div class="conhecimento">
+                    <div class="conhecimento mb-5">
                          <img src="../assets/images/banners/banner-livros.png">
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                    <button class="nav-link active" id="nav-lista-tab" data-bs-toggle="tab" data-bs-target="#nav-lista" type="button" role="tab" aria-controls="nav-lista" aria-selected="true">Lista de Desejos</button>
-                                    <button class="nav-link" id="nav-biblioteca-tab" data-bs-toggle="tab" data-bs-target="#nav-biblioteca" type="button" role="tab" aria-controls="nav-biblioteca" aria-selected="false">Minha Biblioteca</button>
+                                    <button class="nav-link active" id="nav-lista-tab" data-bs-toggle="tab" data-bs-target="#nav-lista" type="button" role="tab" aria-controls="nav-lista" aria-selected="true">Lista</button>
+                                    <button class="nav-link" id="nav-biblioteca-tab" data-bs-toggle="tab" data-bs-target="#nav-biblioteca" type="button" role="tab" aria-controls="nav-biblioteca" aria-selected="false">Biblioteca</button>
                                     <button class="nav-link" id="nav-andamento-tab" data-bs-toggle="tab" data-bs-target="#nav-andamento" type="button" role="tab" aria-controls="nav-andamento" aria-selected="false">Em Andamento</button>
                                     <button class="nav-link" id="nav-concluido-tab" data-bs-toggle="tab" data-bs-target="#nav-concluido" type="button" role="tab" aria-controls="nav-concluido" aria-selected="false">Concluidos</button>
                                 </div>
@@ -168,6 +168,7 @@
             </div>
         </div>
     </div>
+    <?php include_once '../includes/footer.php'; ?>
     <!-- MODALS -->
     <div class="globalModals">
         <?php include_once '../modals/desafio.php'; ?>

@@ -13,6 +13,25 @@
     <!-- GLOBAL CSS -->
     <link rel="icon" type="image/png" href="../assets/images/favicon.png">
     <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/customCalendar.css" rel="stylesheet">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'multiMonthYear',
+                events: [
+                    {
+                        title: 'Evento Teste',
+                        duration: '20:00',
+                        start: '2024-03-25',
+                        end: '2024-03-28'
+                    },                
+                ]
+            });
+            calendar.render();
+        });
+    </script>
 </head>
 <body>
     <div class="main">
@@ -30,88 +49,69 @@
             <div class="container">
                 <div class="defaultPage2">
                     <div class="conteudoPage">
-                        <h1>Perfil</h1>
+                        <h1>Perfil Caverna</h1>
                         
+                        <div class="perfil">
+                            <div class="perfilHead">
+                                <div>
+                                    <img src="../assets/images/avatar.png" class="avatar">
+                                    <h5>Olá Iuri! <span>Membro desde Novembro de 2022</span></h5>
+                                </div>
+
+
+                                <div>
+                                    <span>100 <small>Seguidores</small></span>
+                                    <span>30 <small>Seguindo</small> </span>
+                                </div>
+
+
+                                <div>
+                                    <div class="desafio1">
+                                        <img src="../assets/images/icons/icDesafioExpress.svg">
+                                        <h6>Express</h6>
+                                        <small>10 concluidos</small>
+                                    </div>
+                                    
+                                    <div class="desafio2">
+                                        <img src="../assets/images/icons/icDesafioCavernoso.svg">
+                                        <h6>Cavernoso</h6>
+                                        <small>6 concluidos</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span>Resumo Desafio Caverna</span>
+                            <div class="resume">
+                                <div id="calendar" class="mb-5 mt-4"></div>
+                            </div>
+
+                            <span>Resumo Flow Caverna</span>
+
+                            <div class="resumeFlow mb-5">
+                                <div class="period">
+                                    <button class="active">Anual</button>
+                                    <button>Mensal</button>
+                                    <button>Semanal</button>
+                                </div>
+                                <div class="graphs">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <?php include_once '../includes/footer.php'; ?>
     <!-- MODALS -->
     <div class="globalModals">
         <?php include_once '../modals/desafio.php'; ?>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const inputs = document.querySelectorAll('.form-control');
-
-        inputs.forEach(input => {
-            const index = input.getAttribute('data-index');
-            const savedValue = localStorage.getItem(`meta_${index}`);
-            if (savedValue) {
-                input.value = savedValue;
-            }
-        });
-
-        inputs.forEach(input => {
-            input.addEventListener('keydown', function(event) {
-                if (event.key === 'Enter') {
-                    const index = input.getAttribute('data-index');
-                    const value = input.value.trim();
-                    
-                    if (value !== '') {
-                        localStorage.setItem(`meta_${index}`, value);
-                    } else {
-                        localStorage.removeItem(`meta_${index}`);
-                    }
-                }
-            });
-        });
-    });
-    </script>
-
-    <script>
-        function uploadImage(element) {
-            var input = document.createElement('input');
-            input.type = 'file';
-            input.accept = 'image/*';
-
-            input.click();
-
-            input.onchange = function(event) {
-                var file = event.target.files[0];
-                var reader = new FileReader();
-
-                reader.onload = function(e) {
-                    var uploadedImage = document.createElement('img');
-                    uploadedImage.src = e.target.result;
-                    uploadedImage.classList.add('uploadedImage', 'imagemCusto');
-
-                    var imageId = 'uploadedImage_' + Date.now(); 
-                    uploadedImage.id = imageId;
-
-                    element.innerHTML = '';
-                    element.appendChild(uploadedImage);
-                    localStorage.setItem(imageId, e.target.result);
-                };
-
-                reader.readAsDataURL(file);
-            };
-        }
-
-        window.onload = function() {
-            for (var i = 1; i <= 4; i++) {
-                var uploadedImageSrc = localStorage.getItem('uploadedImage_boxImage_' + i);
-                if (uploadedImageSrc) {
-                    var uploadedImage = document.createElement('img');
-                    uploadedImage.src = uploadedImageSrc;
-                    uploadedImage.classList.add('uploadedImage', 'imagemCusto');
-                    document.getElementById('boxImage_' + i).appendChild(uploadedImage);
-                }
-            }
-        };
-    </script>
 </body>
 </html>

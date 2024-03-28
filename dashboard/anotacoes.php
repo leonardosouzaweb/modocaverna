@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="defaultPage2">
+                <div class="defaultPage2 mb-5">
                     <div class="conteudoPage">
                         <div class="anotacoes">
                             <div class="headNota">
@@ -43,13 +43,14 @@
                                 <button>Criar anotação</button>
                             </div>
                         </div>
-                        
-                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <?php include_once '../includes/footer.php'; ?>
+    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.tiny.cloud/1/qpc2a5zn0wrmdri6env1lgotvxyf3fuaqq6e1rbnz19lk4xc/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>

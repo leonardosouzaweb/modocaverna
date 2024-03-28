@@ -30,13 +30,277 @@
             <div class="container">
                 <div class="defaultPage2">
                     <div class="conteudoPage">
-                        <h1>Perfil</h1>
+                        <h1>Financeiro</h1>
                         
+                        <div class="financeiro mb-5">
+                            <div class="finanHead">
+                                <div>
+                                    <h6>Caixa Atual</h6>
+                                    <ul>
+                                        <li>Itaú <span>R$ 1.250,00</span></li>
+                                        <li>Nubank <span>R$ 1.250,00</span></li>
+                                        <li>Caixa <span>R$ 1.250,00</span></li>
+                                        <li>Total <span>R$ 1.250,00</span></li>
+                                    </ul>
+                                    <div class="add">
+                                        <div class="info">
+                                            <img src="../assets/images/icons/icAdd.svg">
+                                            <span>Adicionar Banco</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h6 class="mb-3">Resumo do mês atual</h6>
+                                    <div class="block">
+                                        <small>Previsão <br>de Custo</small>
+                                        <p class="negative">R$ 11.540,00</p>
+                                    </div>
+
+                                    <div class="block">
+                                        <small>Previsão <br>de Receita</small>
+                                        <p class="positive">R$ 11.540,00</p>
+                                    </div>
+
+                                    <div class="block">
+                                        <small>Previsão <br>de Saldo do mês</small>
+                                        <p>R$ 2.540,00</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h6 class="mb-3">Previsão do próximo mês</h6>
+                                    <div class="block">
+                                        <small>Previsão <br>de Custo</small>
+                                        <p class="negative">R$ 11.540,00</p>
+                                    </div>
+
+                                    <div class="block">
+                                        <small>Previsão <br>de Receita</small>
+                                        <p class="positive">R$ 11.540,00</p>
+                                    </div>
+
+                                    <div class="block">
+                                        <small>Previsão <br>de Saldo do mês</small>
+                                        <p>R$ 2.540,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // -->
+                            <span>Controle Geral de Custos</span>
+                            <div class="controlCustos">
+                                <div>
+                                    <h6>Custo Fixo Definido <span>Adicionar</span></h6>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Descrição</th>
+                                                <th>Valor</th>
+                                                <th>Dia Pag.</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Aluguel</td>
+                                                <td>R$ 100,00</td>
+                                                <td>9</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Internet</td>
+                                                <td>R$ 100,00</td>
+                                                <td>20</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Plano de Saúde</td>
+                                                <td>R$ 100,00</td>
+                                                <td>15</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Secretária</td>
+                                                <td>R$ 100,00</td>
+                                                <td>15</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="total">Total</td>
+                                                <td colspan="2" class="total">R$ 500,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div>
+                                    <h6>Custo Fixo Variável  <span>Adicionar</span></h6>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Descrição</th>
+                                                <th>Valor</th>
+                                                <th>Dia Pag.</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Energia</td>
+                                                <td>R$ 100,00</td>
+                                                <td>9</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Água</td>
+                                                <td>R$ 100,00</td>
+                                                <td>20</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Mercado</td>
+                                                <td>R$ 100,00</td>
+                                                <td>15</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Combustível</td>
+                                                <td>R$ 100,00</td>
+                                                <td>15</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="total">Total</td>
+                                                <td colspan="2" class="total">R$ 500,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div>
+                                    <h6>Cartão de Crédito  <span>Adicionar</span></h6>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Descrição</th>
+                                                <th>Valor</th>
+                                                <th>Dia Pag.</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Itáu</td>
+                                                <td>R$ 100,00</td>
+                                                <td>9</td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Nubank</td>
+                                                <td>R$ 100,00</td>
+                                                <td>9</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="total">Total</td>
+                                                <td colspan="2" class="total">R$ 500,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- // -->
+                            <div class="totalCustos">
+                                <h6>Previsão de custo mensal</h6>
+                                <p class="negative">R$ 11.540,00</p>
+                            </div>
+                            <!-- // -->
+                            <span>Previsão de Entradas</span>
+                            <div class="previsaoEntrada">
+                                <div>
+                                    <h6>Esse mês <span>Adicionar</span></h6>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Descrição</th>
+                                                <th>Valor</th>
+                                                <th>Dia Rec.</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Aluguel</td>
+                                                <td>R$ 100,00</td>
+                                                <td>9</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Salário</td>
+                                                <td>R$ 100,00</td>
+                                                <td>20</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Dividendos</td>
+                                                <td>R$ 100,00</td>
+                                                <td>15</td>
+                                            </tr>
+
+                                            <tr>
+                                            <td class="total">Total</td>
+                                                <td colspan="2" class="total">R$ 500,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div>
+                                    <h6>Próximo mês<span>Adicionar</span></h6>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Descrição</th>
+                                                <th>Valor</th>
+                                                <th>Dia Pag.</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Pro Labore</td>
+                                                <td>R$ 100,00</td>
+                                                <td>9</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Sálario</td>
+                                                <td>R$ 100,00</td>
+                                                <td>20</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Projetos</td>
+                                                <td>R$ 100,00</td>
+                                                <td>15</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="total">Total</td>
+                                                <td colspan="2" class="total">R$ 500,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                             <!-- // -->
+                             <div class="totalCustos">
+                                <h6>Previsão de entradas</h6>
+                                <p class="positive">R$ 11.540,00</p>
+                            </div>
+                            <!-- // -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <?php include_once '../includes/footer.php'; ?>
     <!-- MODALS -->
     <div class="globalModals">
         <?php include_once '../modals/desafio.php'; ?>

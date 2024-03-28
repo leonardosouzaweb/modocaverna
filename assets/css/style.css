@@ -108,7 +108,7 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .components div ul li small { font-size: 15px; color: #B5B5B5; }
 .main .wrapper .container .components div ul li small:last-child { margin-right: 20px; }
 
-.main .wrapper .container .components div .add { border-top: 1px solid #3e3e3e; width: 100%; border-radius: 0; margin-top: 10px; padding: 0; padding-top: 15px; }
+.main .wrapper .container .components div .add { border-top: 1px solid #252525; width: 100%; border-radius: 0; margin-top: 10px; padding: 0; padding-top: 15px; }
 .main .wrapper .container .components div .add .info { display: flex; align-items: center; gap: 10px; width: 100%; padding: 0; transition: all 0.3s; }
 .main .wrapper .container .components div .add .info:hover { cursor:pointer; opacity: 0.6; }
 .main .wrapper .container .components div .add .info span { color: #B5B5B5; padding: 0; margin: 0; transition: all 0.3s; } 
@@ -438,6 +438,105 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .defaultPage2 .dieta div .form-check .form-check-input:focus { box-shadow: none; }
 .main .wrapper .container .defaultPage2 .dieta div .form-check .form-check-label { color: #B5B5B5; }
 
+
+
+.main .wrapper .container .defaultPage2 .perfil .perfilHead { display: flex; align-items: center; margin-top: 30px; border-top: 1px solid #303030; border-bottom: 1px solid #252525; padding-top: 30px; padding-bottom: 30px; justify-content: space-between; }
+.main .wrapper .container .defaultPage2 .perfil .perfilHead span { margin: 0; font-weight: 300; }
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(1) { display: flex; align-items: center; gap: 30px; }
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(1) h5 { color: #fff; font-size: 30px; }
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(1) h5 span { font-weight: 300; font-size: 16px; margin-top: 10px; color: rgba(255,255,255,0.5); }
+
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(2) span { color: rgba(255,255,255,0.5); margin-bottom: 10px;} 
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(2) span small { color: #fff; font-size: 14px; display: block; }
+
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(3) { display: flex; align-items: center; gap: 30px; } 
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(3) .desafio1 { background: #fff; padding: 15px 20px; border-radius: 20px; flex-direction: column; gap: 5px; width: 150px;}
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(3) .desafio1 img { width: 60%; margin: 0 auto; display: block; margin-bottom: 10px; }
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(3) .desafio1 h6 { margin: 0; text-align: center; }
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(3) .desafio1 small { margin: 0; color: rgba(0,0,0,0.5); }
+
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(3) .desafio2 { background: #fff; padding: 15px 20px; border-radius: 20px; flex-direction: column; gap: 5px; width: 150px;}
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(3) .desafio2 img { width: 60%; margin: 0 auto; display: block; margin-bottom: 17px; }
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(3) .desafio2 h6 { margin: 0; text-align: center; }
+.main .wrapper .container .defaultPage2 .perfil .perfilHead div:nth-child(3) .desafio2 small { margin: 0; color: rgba(0,0,0,0.5); text-align: center; display: block; margin-top: 5px; }
+
+.main .wrapper .container .defaultPage2 .perfil .resume span { margin: 0; }
+
+.main .wrapper .container .defaultPage2 .perfil .resumeFlow .period { margin-top: 30px; }
+.main .wrapper .container .defaultPage2 .perfil .resumeFlow .period button { background: rgb(45, 45, 45); border: none; border-radius: 10px; color: #fff; padding: 5px 30px; font-size: 16px; transition: all 0.3s; margin-right: 20px; }
+.main .wrapper .container .defaultPage2 .perfil .resumeFlow .period button.active { background-color: #D11F1F; }
+
+.main .wrapper .container .defaultPage2 .perfil .resumeFlow .graphs { display: flex; align-items: center; width: 100%; gap: 30px; justify-content: space-between; margin-top: 40px;}
+.main .wrapper .container .defaultPage2 .perfil .resumeFlow .graphs div { border-radius: 15px; background: #121212; padding: 25px 30px; width: 33%; height: 350px; }
+
+
+.main .wrapper .container .defaultPage2 .financeiro .finanHead { display: flex; justify-content: space-between; gap: 30px; margin-top: 20px; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div { border-radius: 15px; background: #121212; padding: 25px 30px; width: 33%; position: relative;}
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div h6 { color: #fff; font-size: 20px; }
+
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(1) ul { margin: 0; padding: 0; list-style: none; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(1) ul li { cursor:pointer; color: #fff; display: flex; justify-content: space-between; line-height: 40px; transition: all 0.3s; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(1) ul li:last-child { border-top: 2px dashed #3e3e3e; margin-top: 30px; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(1) ul li:last-child span { font-weight: bold; color: #2ecc71;}
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(1) ul li:hover { opacity: 0.6; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(1) ul li span { margin: 0; display: inline; font-size: initial; }
+
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(1) .add { border-top: 1px solid #252525; width: 85%; height:auto; border-radius: 0; margin-top: 10px; padding: 0; padding-top: 15px; position: absolute; bottom: 25px; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(1) .add .info { display: flex; align-items: center; gap: 10px; width: 100%; height:auto; padding: 0; transition: all 0.3s; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(1) .add .info:hover { cursor:pointer; opacity: 0.6; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(1) .add .info span { color: #B5B5B5; padding: 0; margin: 0; transition: all 0.3s; font-size: initial; } 
+
+
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(2) .block { border: 1px solid #333333; width: 100%; display: flex; height: auto; justify-content: space-between; align-items: center; padding: 13px 20px; margin-bottom: 20px; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(2) .block small { color: #7a7a7a; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(2) .block p { color: #fff; font-size: 25px; margin: 0; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(2) .block p.negative { color: #D11F1F; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(2) .block p.positive { color: #2ecc71; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(2) .block:last-child { background: rgb(39, 39, 39); margin-bottom: 0;}
+
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(3) .block { border: 1px solid #333333; width: 100%; display: flex; height: auto; justify-content: space-between; align-items: center; padding: 13px 20px; margin-bottom: 20px; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(3) .block small { color: #7a7a7a; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(3) .block p { color: #fff; font-size: 25px; margin: 0; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(3) .block p.negative { color: #D11F1F; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(3) .block p.positive { color: #2ecc71; }
+.main .wrapper .container .defaultPage2 .financeiro .finanHead div:nth-child(3) .block:last-child { background: rgb(39, 39, 39); margin-bottom: 0;}
+
+
+.main .wrapper .container .defaultPage2 .financeiro .controlCustos { display: flex; justify-content: space-between; gap: 30px; margin-top: 20px; }
+.main .wrapper .container .defaultPage2 .financeiro .controlCustos div {  width: 33%; position: relative; }
+.main .wrapper .container .defaultPage2 .financeiro .controlCustos div h6 { background: #D11F1F; color: #fff; font-size: 20px; padding: 15px 20px; border-radius: 15px; display: flex; align-items: center; justify-content: space-between; }
+.main .wrapper .container .defaultPage2 .financeiro .controlCustos div h6 span { cursor:pointer; margin: 0; background: black; font-size: initial; padding: 5px 20px; border-radius: 15px; transition: all 0.3s; }
+.main .wrapper .container .defaultPage2 .financeiro .controlCustos div h6 span:hover { background: #1f1f1f; }
+.main .wrapper .container .defaultPage2 .financeiro .controlCustos div table thead tr { border-bottom:1px solid rgb(50, 50, 50); }
+.main .wrapper .container .defaultPage2 .financeiro .controlCustos div table thead tr th { background: transparent; color: #fff; font-weight: bold; }
+
+.main .wrapper .container .defaultPage2 .financeiro .controlCustos div table tbody tr { border-bottom:1px solid rgb(50, 50, 50); transition: all 0.3s; }
+.main .wrapper .container .defaultPage2 .financeiro .controlCustos div table tbody tr:last-child { font-weight: bold; }
+.main .wrapper .container .defaultPage2 .financeiro .controlCustos div table tbody tr:hover { background: rgba(255,255,255,0.1); }
+.main .wrapper .container .defaultPage2 .financeiro .controlCustos div table tbody tr td { background: transparent; color: #bababa; font-weight: 300; }
+.main .wrapper .container .defaultPage2 .financeiro .controlCustos div table tbody tr td.total { font-weight: bold; color: #fff;}
+
+.main .wrapper .container .defaultPage2 .financeiro .totalCustos {  border: 1px solid #333333; background: rgb(39, 39, 39); margin-bottom: 0; border-radius: 15px; display: flex; padding: 15px 20px; align-items: center; justify-content: space-between; margin-top: 30px; }
+.main .wrapper .container .defaultPage2 .financeiro .totalCustos h6 { color: #fff; margin: 0; font-size: 22px; font-weight: 300; }
+.main .wrapper .container .defaultPage2 .financeiro .totalCustos p { color: #fff; font-size: 25px; margin: 0; }
+.main .wrapper .container .defaultPage2 .financeiro .totalCustos p.negative { color: #D11F1F; }
+.main .wrapper .container .defaultPage2 .financeiro .totalCustos p.positive { color: #2ecc71; }
+
+.main .wrapper .container .defaultPage2 .financeiro .previsaoEntrada { display: flex; gap: 30px; margin-top: 20px; }
+.main .wrapper .container .defaultPage2 .financeiro .previsaoEntrada div {  width: 33%; position: relative; }
+.main .wrapper .container .defaultPage2 .financeiro .previsaoEntrada div h6 { background: #2ecc71; color: #fff; font-size: 20px; padding: 15px 20px; border-radius: 15px; display: flex; align-items: center; justify-content: space-between; }
+.main .wrapper .container .defaultPage2 .financeiro .previsaoEntrada div h6 span { cursor:pointer; margin: 0; background: black; font-size: initial; padding: 5px 20px; border-radius: 15px; transition: all 0.3s; }
+.main .wrapper .container .defaultPage2 .financeiro .previsaoEntrada div h6 span:hover { background: #1f1f1f; }
+.main .wrapper .container .defaultPage2 .financeiro .previsaoEntrada div table thead tr { border-bottom:1px solid rgb(50, 50, 50); }
+.main .wrapper .container .defaultPage2 .financeiro .previsaoEntrada div table thead tr th { background: transparent; color: #fff; font-weight: bold; }
+
+.main .wrapper .container .defaultPage2 .financeiro .previsaoEntrada div table tbody tr { border-bottom:1px solid rgb(50, 50, 50); transition: all 0.3s; }
+.main .wrapper .container .defaultPage2 .financeiro .previsaoEntrada div table tbody tr:last-child { font-weight: bold; }
+.main .wrapper .container .defaultPage2 .financeiro .previsaoEntrada div table tbody tr:hover { background: rgba(255,255,255,0.1); }
+.main .wrapper .container .defaultPage2 .financeiro .previsaoEntrada div table tbody tr td { background: transparent; color: #bababa; font-weight: 300; }
+.main .wrapper .container .defaultPage2 .financeiro .previsaoEntrada div table tbody tr td.total { font-weight: bold; color: #fff;}
+
+
 footer { margin-bottom: 100px; }
 footer p { color: #fff; }
 
@@ -446,10 +545,13 @@ footer p { color: #fff; }
 /* MODALS */
 .modal-open .container-fluid, .modal-open  .container { filter: blur(1.5rem); user-select: none; pointer-events: none; }
 .modal .modal-content { border-radius: 20px !important;}
+.modal .modal-content.video { width: 1200px !important;  }
+.modal .modal-content.video iframe { width: 1200px; height: 300px ;}
 .modal .modal-title { padding: 10px 15px 0px 15px; border-bottom: none;  }
 .modal-header { border-bottom: none; }
 .modal-header .btn-close { margin-right: 5px; margin-top: -5px; }
 .modal .modal-body .hours { display: flex; align-items: center; gap: 20px; }
+.modal .modal-body.video { width: 700px !important; height: 300px ;}
 .modal .modal-body .form-control { padding: 10px 20px; }
 .modal .modal-body .btn-primary { border-radius: 10px; background: #D11F1F;  width: 100%; border: none; padding: 10px; font-size: 18px; margin-top: 30px; }
 .modal .modal-body .btn-primary:hover { background: #e92f2f; }
@@ -497,22 +599,22 @@ footer p { color: #fff; }
 .modal .modal-body .desafioOptions button.iniciarDesafio:disabled { background: #d2d2d2; color: #959595; font-weight: 500; }
  
 .modal .modal-body .desafioOptions .formItem { position: relative; }
-.modal .modal-body .desafioOptions .formItem .form-control { border-radius: 15px; }
+.modal .modal-body .desafioOptions .formItem .form-control { border-radius: 15px; text-transform: uppercase; }
 .modal .modal-body .desafioOptions .formItem button { border-radius: 10px; background: #a8a8a8; width: 30%; border: none; padding: 5px; color: #fff; position: absolute; right: 0; top: 6px; right: 5px; transition: all 0.3s;}
 .modal .modal-body .desafioOptions .formItem button:hover { background: #6e6e6e; }
 
 .modal .modal-body .desafioOptions .itensAdicionadosAbdicar span { font-size: 13px; display: block; margin-top: 10px; margin-bottom: 0; }
 .modal .modal-body .desafioOptions .itensAdicionadosAbdicar ul { list-style: none; padding: 0; margin: 0; margin-top: 10px; }
-.modal .modal-body .desafioOptions .itensAdicionadosAbdicar ul li { display: inline-block; font-size: 12px; color: #D11F1F; margin-right: 20px; }
+.modal .modal-body .desafioOptions .itensAdicionadosAbdicar ul li { display: inline-block; font-size: 12px; color: #D11F1F; margin-right: 20px; text-transform: uppercase; }
 
 .modal .modal-body .desafioOptions .itensAdicionadosFalhas span { font-size: 13px; display: block; margin-top: 10px;  margin-bottom: 0;}
 .modal .modal-body .desafioOptions .itensAdicionadosFalhas ul { list-style: none; padding: 0; margin: 0; margin-top: 10px; }
-.modal .modal-body .desafioOptions .itensAdicionadosFalhas ul li { display: inline-block; font-size: 12px; color: #5eaf4a; margin-right: 20px; }
+.modal .modal-body .desafioOptions .itensAdicionadosFalhas ul li { display: inline-block; font-size: 12px; color: #5eaf4a; margin-right: 20px; text-transform: uppercase; }
 
 
 .modal .modal-body .desafioOptions .sugestoesAbdicar { margin-top: 10px; }
 .modal .modal-body .desafioOptions .sugestoesAbdicar ul { list-style: none; padding: 0; margin: 0; margin-top: 10px; }
-.modal .modal-body .desafioOptions .sugestoesAbdicar ul li { cursor:pointer; display: inline-block; margin-right: 5px; line-height: 30px; font-size: 12px; background: #f1f1f1; padding: 1px 10px; border-radius: 10px; margin-bottom: 8px; transition: all 0.3s; }
+.modal .modal-body .desafioOptions .sugestoesAbdicar ul li { cursor:pointer; display: inline-block; margin-right: 5px; line-height: 30px; font-size: 12px; background: #f1f1f1; padding: 1px 10px; border-radius: 10px; margin-bottom: 8px; transition: all 0.3s; text-transform: uppercase;}
 .modal .modal-body .desafioOptions .sugestoesAbdicar ul li:hover { background: #d9d9d9; }
 .modal .modal-body .desafioOptions .sugestoesAbdicar ul li.active { background: #D11F1F; color: #fff; font-weight: bold; }
 
@@ -591,5 +693,5 @@ footer p { color: #fff; }
 
 
 .nav-tabs { border-bottom: 1px solid rgba(93, 93, 93, 0.67); margin-top: 30px;}
-.nav-tabs .nav-link { border: none; color: #a9a9a9; padding: 10px 40px; font-size: 18px; }
-.nav-tabs .nav-link.active { background: #D11F1F; border: none; color: #fff; padding: 10px 40px;}
+.nav-tabs .nav-link { border: none; color: #a9a9a9; padding: 10px 30px; font-size: 18px; width: 185px; }
+.nav-tabs .nav-link.active { background: #D11F1F; border: none; color: #fff; padding: 10px 30px; width: 185px;}

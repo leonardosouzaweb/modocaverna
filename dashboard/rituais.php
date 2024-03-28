@@ -32,7 +32,7 @@
                     <div class="conteudoPage">
                         <h1>Rituais</h1>
                         
-                        <div class="ritual">
+                        <div class="ritual mb-5">
                             <div>
                                 <span class="mt-0">☀️ Ritual Matinal <button class="btnAddBlocoMatinal" style="display:block;" data-bs-toggle="modal" data-bs-target="#modalRitualMatinal">Criar bloco</button></span>
                                 <div class="createBlockMatinal" data-bs-toggle="modal" data-bs-target="#modalRitualMatinal">
@@ -113,13 +113,14 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <?php include_once '../includes/footer.php'; ?>
+
     <!-- MODALS -->
     <div class="globalModals">
         <?php include_once '../modals/ritualMatinal.php'; ?>

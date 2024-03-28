@@ -40,7 +40,6 @@
                                 </div>
 
                                 <div>
-                                    <span>Como você estava antes do desafio:</span>
                                     <p>Eu sou Maria, uma mãe solteira que trabalha em tempo integral como 
                                     assistente administrativa em uma empresa local. Sempre me esforcei para 
                                     cuidar da minha filha, Ana, de oito anos, fornecendo tudo o que ela precisa. 
@@ -52,12 +51,12 @@
                         </div>
 
                         <div class="step2" style="display:none;">
-                            <h1>Agora registre seus avanços.</h1>
+                            <h1>Registre sua transformação! 🏆</h1>
                             <div class="content">
                                 <div>
-                                    <small class="mb-3">É muito importante que você registre as informações do desafio, elas vão estar
-                                    em seu perfil para você visitar sempre que quiser, e acompanhar sua evolução nos desafios
-                                    que você iniciar.</small>
+                                    <small class="mb-3">Como se sente agora? Descreva esse momento com um pequeno texto e registre com algumas fotos.
+                                    <br>
+                                    Essas informações ficarão salvas no seu Perfil Caverna e você poderá consultar o histórico sempre que quiser.</small>
 
                                     <textarea placeholder="Escreva sua mensagem..." class="form-control"></textarea>
 						            <span>Upload de foto</span> 
@@ -73,13 +72,13 @@
                                     <img src="../assets/images/icons/icCheck.svg">
                                 </div>
                             </div>
-                            <h1>Gostaria de iniciar um novo desafio?</h1>
-                            <p>Lembre-se os registros vão estar disponíveis no perfil caverna</p>
+                            <h1>Registro concluído!</h1>
+                            <p>Gostaria de iniciar um novo desafio?</p>
 
                             <div class="content">
                                 <div class="other">
-                                    <button>Sim, vamos nessa</button>
-                                    <button>Hoje não</button>
+                                    <button>Sim! Eu aceito.</button>
+                                    <button>Agora não.</button>
                                 </div>
                             </div>
                         </div>

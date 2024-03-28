@@ -77,11 +77,7 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <p>© 2024 Iuri Meira - Modo Caverna. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+   <?php include_once '../includes/footer.php'; ?>
     <!-- MODALS -->
     <div class="globalModals">
         <?php include_once '../modals/naoEsquecer.php'; ?>

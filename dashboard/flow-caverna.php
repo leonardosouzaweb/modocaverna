@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="flow">
+                <div class="flow mb-5">
                     <div class="top">
                         <div>
                             <span data-bs-toggle="modal" data-bs-target="#modalFlow">Flow Caverna</span>
@@ -94,6 +94,7 @@
             </div>
         </div>
     </div>
+    <?php include_once '../includes/footer.php'; ?>
      <!-- MODALS -->
      <div class="globalModals">
         <?php include_once '../modals/naoEsquecer.php'; ?>

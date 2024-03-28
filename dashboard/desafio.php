@@ -118,6 +118,8 @@
             </div>
         </div>
     </div>
+
+    <?php include_once '../includes/footer.php'; ?>
     <!-- MODALS -->
     <div class="globalModals">
         <?php include_once '../modals/desafio.php'; ?>
