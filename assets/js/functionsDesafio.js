@@ -251,7 +251,7 @@ function adicionarItemAbdicar(textoItem, isSugestao) {
     li.textContent = textoItem; 
 
     const removerIcone = document.createElement("img");
-    removerIcone.src = "icone-lixeira.png"; 
+    removerIcone.src = "../assets/images/icons/icRemove.svg"; 
     removerIcone.alt = "Remover";
     removerIcone.classList.add("removerItem");
 
@@ -304,7 +304,7 @@ function adicionarItemFalhar(textoItem, isSugestao) {
     li.textContent = textoItem; 
 
     const removerIcone = document.createElement("img");
-    removerIcone.src = "icone-lixeira.png"; 
+    removerIcone.src = "../assets/images/icons/icRemove.svg"; 
     removerIcone.alt = "Remover";
     removerIcone.classList.add("removerItem"); 
 

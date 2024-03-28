@@ -6,11 +6,13 @@
 
 
 
-body { width: 100%; height: 100%; background: #000; }
+body { width: 100%; height: 100%; background: rgb(42,42,42); background: radial-gradient(circle, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%); }
 p { font-size: 16px; line-height: 25.6px; }
 
 /* LOGIN */
-.login { width: 100%; height: 100vh; display: flex; align-items: center; }
+.login { width: 100%; height: 100vh; display: flex; align-items: center; background: rgb(42,42,42); background: radial-gradient(circle, rgba(42,42,42,1) 0%, rgba(0,0,0,1) 100%); }
+.login .logo { width: 50%; background: #D11F1F; height: 100%; display: flex; align-items: center; justify-content: center;}
+.login .logo img { width:350px;}
 
 .login .loginBox { border-radius: 20px; border: 1px solid #2a2a2a; background: #141414; width: 20%; margin: 0 auto; padding: 35px; }
 .login .loginBox span { color: #fff; font-size: 25px;}
@@ -32,7 +34,7 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .heading .container .menu nav ul li.loja { border-radius: 10px; background: #E6792A; }
 
 .main .wrapper .heading .container .menu nav ul li:last-child { border: none;  }
-.main .wrapper .heading .container .menu nav ul .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 310px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); z-index: 999999999; top: 100%;  right:0px; padding: 20px; border-radius: 10px; }
+.main .wrapper .heading .container .menu nav ul .dropdown-content { display: none; position: absolute; background-color: #f9f9f9; min-width: 310px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); z-index: 999999999; top: 100%;  left:0px; padding: 20px; border-radius: 10px; }
 .main .wrapper .heading .container .menu nav ul .dropdown:hover .dropdown-content { display: block; list-style: none; padding: 15px 0px; margin: 0; }
 .main .wrapper .heading .container .menu nav ul .dropdown:hover .dropdown-content li { color: rgba(0,0,0,0.5); line-height: 40px; transition: all 0.3s; }
 .main .wrapper .heading .container .menu nav ul .dropdown:hover .dropdown-content li span { background: #D11F1F; color: #fff; font-size: 12px; border-radius: 20px; padding: 3px 10px; position: relative; top: -3px; font-weight: bold;}
@@ -139,7 +141,7 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .desafio .content div:nth-child(1) .meComprometo ul::-webkit-scrollbar-thumb:hover { background: transparent; }
 
 
-.main .wrapper .container .desafio .content div:nth-child(1) .meComprometo ul li { color: #fff; line-height: 45px; }
+.main .wrapper .container .desafio .content div:nth-child(1) .meComprometo ul li { color: #fff; line-height: 45px; text-transform: uppercase; }
 .main .wrapper .container .desafio .content div:nth-child(1) .meComprometo ul li img { top: 80px; width: 100px; padding: 18px 0; }
 
 .main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar { border-radius: 10px; background: #1A1A1A; width: 100%; padding: 25px 35px; height: 415px; }
@@ -151,7 +153,7 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul::-webkit-scrollbar-track { background: transparent; border-radius: 10px; }
 .main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul::-webkit-scrollbar-thumb { background: transparent; border-radius: 30px; }
 .main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul::-webkit-scrollbar-thumb:hover { background: transparent; }
-.main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul li { color: #fff; line-height: 45px; }
+.main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul li { color: #fff; line-height: 45px; text-transform: uppercase; }
 .main .wrapper .container .desafio .content div:nth-child(1) .naoFalhar ul li img { top: 80px; width: 100px; padding: 18px 0;  }
 
 .main .wrapper .container .desafio .content div:nth-child(2) { width: 65%;}
@@ -189,13 +191,13 @@ p { font-size: 16px; line-height: 25.6px; }
 .main .wrapper .container .desafio .content div:nth-child(2) .diaHoje .buttons button.negative:hover { background: #D11F1F; color: #fff; }
 
 .main .wrapper .container .desafio .content div:nth-child(2) .diaHoje .send { position: relative; }
-.main .wrapper .container .desafio .content div:nth-child(2) .diaHoje .send textarea.form-control { background: #1A1A1A; padding: 20px; border: 1px solid transparent; height: 225px; border-radius: 15px; color: rgba(255,255,255,0.4); } 
+.main .wrapper .container .desafio .content div:nth-child(2) .diaHoje .send textarea.form-control { background: #1A1A1A; padding: 20px; border: 1px solid transparent; height: 225px; border-radius: 15px; color: rgba(255,255,255,0.4); resize: none;} 
 .main .wrapper .container .desafio .content div:nth-child(2) .diaHoje .send textarea.form-control:focus { box-shadow: none; border: 1px solid transparent; }
 .main .wrapper .container .desafio .content div:nth-child(2) .diaHoje .send textarea.form-control::placeholder { color: rgba(255,255,255,0.4); opacity: 1; }
 .main .wrapper .container .desafio .content div:nth-child(2) .diaHoje .send textarea.form-control::-ms-input-placeholder { color: rgba(255,255,255,0.4); }
 .main .wrapper .container .desafio .content div:nth-child(2) .diaHoje .send button { position: absolute; right: 20px; bottom: 20px; background: #D11F1F; padding: 5px 30px; border: none; border-radius: 12px; color: #fff; font-weight: 500; transition: all 0.3s; }
 
-.main .wrapper .container .desafio .content div:nth-child(2) .activeDay { width: 100%; height: 420px; position: absolute; top: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(0, 0, 0, 0.9); border-radius: 15px; }
+.main .wrapper .container .desafio .content div:nth-child(2) .activeDay { width: 100%; height: 400px; position: absolute; top: -5px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgb(26 26 26); border-radius: 15px; }
 .main .wrapper .container .desafio .content div:nth-child(2) .activeDay span { color: #fff; font-size: 22px; }
 .main .wrapper .container .desafio .content div:nth-child(2) .activeDay .hourTilt { display: flex; gap: 20px; align-items: center; justify-content: center; }
 .main .wrapper .container .desafio .content div:nth-child(2) .activeDay .hourTilt h3 { font-size: 100px; color: #fff; font-weight: 400; }
@@ -545,8 +547,7 @@ footer p { color: #fff; }
 /* MODALS */
 .modal-open .container-fluid, .modal-open  .container { filter: blur(1.5rem); user-select: none; pointer-events: none; }
 .modal .modal-content { border-radius: 20px !important;}
-.modal .modal-content.video { width: 1200px !important;  }
-.modal .modal-content.video iframe { width: 1200px; height: 300px ;}
+.modal .modal-content.video iframe { width: 100%; height: 300px ;}
 .modal .modal-title { padding: 10px 15px 0px 15px; border-bottom: none;  }
 .modal-header { border-bottom: none; }
 .modal-header .btn-close { margin-right: 5px; margin-top: -5px; }
@@ -606,10 +607,14 @@ footer p { color: #fff; }
 .modal .modal-body .desafioOptions .itensAdicionadosAbdicar span { font-size: 13px; display: block; margin-top: 10px; margin-bottom: 0; }
 .modal .modal-body .desafioOptions .itensAdicionadosAbdicar ul { list-style: none; padding: 0; margin: 0; margin-top: 10px; }
 .modal .modal-body .desafioOptions .itensAdicionadosAbdicar ul li { display: inline-block; font-size: 12px; color: #D11F1F; margin-right: 20px; text-transform: uppercase; }
+.modal .modal-body .desafioOptions .itensAdicionadosAbdicar ul li img { cursor:pointer; width: 12px; margin-left: 5px; margin-top: -3px; opacity: 0.5; transition: all 0.3s; }
+.modal .modal-body .desafioOptions .itensAdicionadosAbdicar ul li img:hover { opacity: 0.9; }
 
 .modal .modal-body .desafioOptions .itensAdicionadosFalhas span { font-size: 13px; display: block; margin-top: 10px;  margin-bottom: 0;}
 .modal .modal-body .desafioOptions .itensAdicionadosFalhas ul { list-style: none; padding: 0; margin: 0; margin-top: 10px; }
 .modal .modal-body .desafioOptions .itensAdicionadosFalhas ul li { display: inline-block; font-size: 12px; color: #5eaf4a; margin-right: 20px; text-transform: uppercase; }
+.modal .modal-body .desafioOptions .itensAdicionadosFalhas ul li img { cursor:pointer; width: 12px; margin-left: 5px; margin-top: -3px; opacity: 0.5; transition: all 0.3s; }
+.modal .modal-body .desafioOptions .itensAdicionadosFalhas ul li img:hover { opacity: 0.9; }
 
 
 .modal .modal-body .desafioOptions .sugestoesAbdicar { margin-top: 10px; }

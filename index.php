@@ -17,6 +17,9 @@
 </head>
 <body>
     <div class="login">
+        <div class="logo">
+            <img src="assets/images/logo-reverse.svg">
+        </div>
         <div class="loginBox">
             <span>Entrar</span>
             <p class="mb-4">Hora de ativar o modo caverna!</p>
